@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="30" android:padding="2dp" android:layout_width="-1" android:layout_height="-1"
-    <LinearLayout android:layout_width="-1" android:layout_height="-2" style="@ac/CompletionListWindow">
-        <com.aide.ui.views.CompletionListView android:id="@x/completionList" android:padding="2dp" android:layout_width="-1" android:layout_height="-2" style="@ac/BrowserListView" />
-    </LinearLayout>
-</LinearLayout>

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu>
-    <item android:icon="?unknown_attr_ref: 7f010125" android:id="@x/logcatMenuCopy" android:title="@ab/command_copy" android:showAsAction="5" />
-</menu>

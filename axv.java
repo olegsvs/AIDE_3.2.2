@@ -1,4 +1,0 @@
-class axv {
-    private axv() {
-    }
-}

@@ -1,5 +1,0 @@
-public enum aye {
-    NO_CONFLICT,
-    FIRST_CONFLICTING_RANGE,
-    NEXT_CONFLICTING_RANGE
-}

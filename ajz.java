@@ -1,6 +1,0 @@
-enum ajz {
-    LIVE_IN_AT_STATEMENT,
-    LIVE_OUT_AT_STATEMENT,
-    LIVE_OUT_AT_BLOCK,
-    DONE
-}

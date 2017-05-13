@@ -1,7 +1,0 @@
-public enum beo {
-    COUNTING,
-    GETTING_SIZES,
-    FINDING_SOURCES,
-    COMPRESSING,
-    WRITING
-}

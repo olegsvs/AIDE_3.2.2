@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="10" android:orientation="0" android:padding="2dp" android:layout_width="-1" android:layout_height="-2">
-    <ImageView android:id="@x/gotobrowserEntryImage" style="@ac/BrowserImage" />
-    <LinearLayout android:orientation="1" android:paddingLeft="3dp" android:layout_width="-2" android:layout_height="-2" android:layout_weight="1.0">
-        <TextView android:id="@x/gotobrowserEntryName" android:layout_width="-2" android:layout_height="-2" android:text=" " style="@ac/BrowserLabelLarge" />
-        <TextView android:id="@x/gotobrowserEntryContainerName" android:layout_width="-2" android:layout_height="-2" android:text=" " style="@ac/BrowserLabelSmallGray" />
-    </LinearLayout>
-    <ImageView android:id="@x/gotobrowserHelpButton" android:src="@drawable/info" style="@ac/BrowserHelpButton" />
-</LinearLayout>

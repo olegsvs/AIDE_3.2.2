@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="1" android:id="@x/helpViewFrame" android:layout_width="-1" android:layout_height="-1">
-    <WebView android:id="@x/helpViewWebView" android:layout_width="-1" android:layout_height="-1" />
-</LinearLayout>

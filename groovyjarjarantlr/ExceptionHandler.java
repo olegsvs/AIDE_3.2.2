@@ -1,4 +1,0 @@
-package groovyjarjarantlr;
-
-class ExceptionHandler {
-}

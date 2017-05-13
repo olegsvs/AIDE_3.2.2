@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="-1" android:layout_height="-1" style="@ac/TrainerBoxOuter"
-    <LinearLayout android:orientation="1" android:id="@x/trainerToast" android:focusable="true" android:layout_width="-1" android:layout_height="-1" style="@ac/TrainerBoxInner">
-        <TextView android:textColor="#ffffff" android:id="@x/trainerToastTitle" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="-2" android:layout_height="-2" android:text="" />
-        <TextView android:textColor="#ffffff" android:id="@x/trainerToastText" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="-2" android:layout_height="-2" android:text="" />
-        <TextView android:textColor="#ffffff" android:id="@x/trainerToastButton" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="-2" android:layout_height="-2" android:text="" />
-    </LinearLayout>
-</LinearLayout>
