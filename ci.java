@@ -327,7 +327,6 @@ public class ci {
     }
 
     public boolean j6(boolean z) {
-        Enumeration keys;
         ga Zo = this.j6.cn.Zo();
         Zo.j6.j6();
         while (Zo.j6.DW()) {
@@ -337,6 +336,7 @@ public class ci {
                 j6(FH, EQ);
             }
         }
+        Enumeration keys;
         String str;
         try {
             boolean DW = DW(z);
@@ -389,7 +389,6 @@ public class ci {
 
     private boolean DW(boolean z) {
         Iterator it;
-        OutputStream zipOutputStream;
         IOException iOException = null;
         boolean z2 = false;
         ArrayList arrayList = new ArrayList();
@@ -479,6 +478,7 @@ public class ci {
             } else {
                 z2 = true;
                 ZipInputStream zipInputStream;
+                OutputStream zipOutputStream;
                 ZipInputStream zipInputStream2;
                 try {
                     ZipEntry nextEntry;

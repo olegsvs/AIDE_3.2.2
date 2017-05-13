@@ -168,10 +168,10 @@ class c {
     }
 
     private void v5() {
+        uy j6;
         if (Thread.interrupted()) {
             throw new InterruptedException();
         } else if (!AaptService.j6) {
-            uy j6;
             try {
                 j6 = uz.j6(Arrays.asList(new String[]{"/system/bin/chmod", "777", this.Hw}), null, null, true, null, null);
                 if (j6.j6() != 0) {

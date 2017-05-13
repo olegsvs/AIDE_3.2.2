@@ -23,7 +23,7 @@ public class vo implements Serializable {
                 vp j6 = vqVar.j6;
                 int i4 = -1;
                 while (j6 != null) {
-                    if ((i3 != i || j6.j6 > r9) && ((i4 == -1 || i4 > j6.j6) && !(r1.j6 == 0 && i3 != 0 && DW(j6.FH, i3 - 1, Integer.MAX_VALUE)))) {
+                    if ((i3 != i || j6.j6 > r9) && ((i4 == -1 || i4 > j6.j6) && !(j6.j6 == 0 && i3 != 0 && DW(j6.FH, i3 - 1, Integer.MAX_VALUE)))) {
                         i4 = j6.j6;
                     }
                     j6 = j6.Hw;

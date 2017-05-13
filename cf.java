@@ -1400,7 +1400,7 @@ public final class cf extends dy {
         int i2;
         dy dyVar;
         dy DW;
-        co gn;
+        int i3;
         co j3 = j3();
         Cz().I.DW();
         Cz().Mz.j6.j6();
@@ -1408,14 +1408,14 @@ public final class cf extends dy {
             Cz().I.DW(Cz().Mz.j6.FH(), Cz().Mz.j6.Hw());
         }
         for (i = 0; i < Cz().lg.Hw(); i++) {
-            cf gn2;
+            cf gn;
             dy dyVar2 = (dy) Cz().lg.j6(i);
             if (dyVar2.n5()) {
-                gn2 = ((dn) dyVar2).gn();
+                gn = ((dn) dyVar2).gn();
             } else {
-                gn2 = (cf) dyVar2;
+                gn = (cf) dyVar2;
             }
-            fh cn = gn2.cn();
+            fh cn = gn.cn();
             cn.j6.j6();
             while (cn.j6.DW()) {
                 Cz().I.DW(cn.j6.FH(), cn.j6.Hw());
@@ -1474,53 +1474,54 @@ public final class cf extends dy {
             }
         }
         for (i2 = 0; i2 < Cz().lg.Hw(); i2++) {
-            co gn3;
-            int i3;
-            cf gn4;
+            co gn2;
+            int i4;
+            cf gn3;
+            co gn4;
             dyVar2 = (dy) Cz().lg.j6(i2);
             if (dyVar2.n5()) {
-                gn3 = ((dn) dyVar2).gn();
+                gn2 = ((dn) dyVar2).gn();
             } else {
-                gn3 = (cf) dyVar2;
+                gn2 = (cf) dyVar2;
             }
-            if (gn3.g3()) {
-                for (i3 = 0; i3 < Cz().lg.Hw(); i3++) {
-                    if (i2 != i3) {
-                        dyVar = (dy) Cz().lg.j6(i3);
+            if (gn2.g3()) {
+                for (i4 = 0; i4 < Cz().lg.Hw(); i4++) {
+                    if (i2 != i4) {
+                        dyVar = (dy) Cz().lg.j6(i4);
                         if (dyVar.n5()) {
-                            gn4 = ((dn) dyVar).gn();
+                            gn3 = ((dn) dyVar).gn();
                         } else {
-                            gn4 = (cf) dyVar;
+                            gn3 = (cf) dyVar;
                         }
-                        if (gn4.jO().FH(gn3)) {
+                        if (gn3.jO().FH(gn2)) {
                             break;
                         }
                     }
                 }
             }
-            fh aj = gn3.aj();
+            fh aj = gn2.aj();
             aj.j6.j6();
             while (aj.j6.DW()) {
                 int FH2 = aj.j6.FH();
                 co coVar2 = (df) aj.j6.Hw();
                 if (!dl.QX(coVar2.Ev())) {
-                    DW = gn3.DW((df) coVar2);
+                    DW = gn2.DW((df) coVar2);
                     if (DW.cT()) {
                         if (coVar2.Xa() != DW) {
                             Cz().g3.j6(coVar2, (co) DW);
                         }
                     } else if (dyVar2.cT()) {
                         if (dyVar2.e3()) {
-                            gn = ((dn) DW).gn();
+                            gn4 = ((dn) DW).gn();
                         }
-                        if (coVar2.Xa() != gn) {
-                            Cz().g3.j6(coVar2, gn);
+                        if (coVar2.Xa() != gn4) {
+                            Cz().g3.j6(coVar2, gn4);
                         }
                     } else {
                         try {
-                            gn = ((dn) dyVar2).j6(DW);
-                            if (coVar2.Xa() != gn) {
-                                Cz().g3.j6(coVar2, gn);
+                            gn4 = ((dn) dyVar2).j6(DW);
+                            if (coVar2.Xa() != gn4) {
+                                Cz().g3.j6(coVar2, gn4);
                             }
                         } catch (gl e3) {
                         }
@@ -1528,31 +1529,30 @@ public final class cf extends dy {
                     Cz().Sf.DW(FH2, coVar2);
                 }
             }
-            fh sy = gn3.sy();
+            fh sy = gn2.sy();
             sy.j6.j6();
             while (sy.j6.DW()) {
                 df dfVar;
-                int i4;
                 int FH3 = sy.j6.FH();
                 coVar2 = (df) sy.j6.Hw();
                 if (!dl.QX(coVar2.Ev())) {
-                    DW = gn3.DW((df) coVar2);
+                    DW = gn2.DW((df) coVar2);
                     if (DW.cT()) {
                         if (coVar2.Xa() != DW) {
                             Cz().g3.j6(coVar2, (co) DW);
                         }
                     } else if (dyVar2.cT()) {
                         if (dyVar2.e3()) {
-                            gn = ((dn) DW).gn();
+                            gn4 = ((dn) DW).gn();
                         }
-                        if (coVar2.Xa() != gn) {
-                            Cz().g3.j6(coVar2, gn);
+                        if (coVar2.Xa() != gn4) {
+                            Cz().g3.j6(coVar2, gn4);
                         }
                     } else {
                         try {
-                            gn = ((dn) dyVar2).j6(DW);
-                            if (coVar2.Xa() != gn) {
-                                Cz().g3.j6(coVar2, gn);
+                            gn4 = ((dn) dyVar2).j6(DW);
+                            if (coVar2.Xa() != gn4) {
+                                Cz().g3.j6(coVar2, gn4);
                             }
                         } catch (gl e4) {
                         }
@@ -1561,13 +1561,13 @@ public final class cf extends dy {
                     while (Cz().cn.j6.DW()) {
                         dfVar = (df) Cz().cn.j6.Hw();
                         if (dfVar.vJ()) {
-                            i4 = 0;
-                            while (i4 < dfVar.g3()) {
-                                if (dfVar.Hw(i4) == FH3 && dfVar.FH(i4).cT() && ((cf) dfVar.FH(i4)).FH(DW((df) coVar2))) {
+                            i3 = 0;
+                            while (i3 < dfVar.g3()) {
+                                if (dfVar.Hw(i3) == FH3 && dfVar.FH(i3).cT() && ((cf) dfVar.FH(i3)).FH(DW((df) coVar2))) {
                                     dfVar.j6((df) coVar2);
                                     break;
                                 }
-                                i4++;
+                                i3++;
                             }
                             continue;
                         }
@@ -1690,49 +1690,49 @@ public final class cf extends dy {
         while (i2 < Cz().lg.Hw()) {
             dyVar2 = (dy) Cz().lg.j6(i2);
             if (dyVar2.n5()) {
-                gn3 = ((dn) dyVar2).gn();
+                gn2 = ((dn) dyVar2).gn();
             } else {
-                gn3 = (cf) dyVar2;
+                gn2 = (cf) dyVar2;
             }
-            if (gn3.g3()) {
-                for (i3 = 0; i3 < Cz().lg.Hw(); i3++) {
-                    if (i2 != i3) {
-                        dyVar = (dy) Cz().lg.j6(i3);
+            if (gn2.g3()) {
+                for (i4 = 0; i4 < Cz().lg.Hw(); i4++) {
+                    if (i2 != i4) {
+                        dyVar = (dy) Cz().lg.j6(i4);
                         if (dyVar.n5()) {
-                            gn4 = ((dn) dyVar).gn();
+                            gn3 = ((dn) dyVar).gn();
                         } else {
-                            gn4 = (cf) dyVar;
+                            gn3 = (cf) dyVar;
                         }
-                        if (gn4.jO().FH(gn3)) {
+                        if (gn3.jO().FH(gn2)) {
                             break;
                         }
                     }
                 }
             }
-            aj = gn3.OW();
+            aj = gn2.OW();
             aj.j6.j6();
             while (aj.j6.DW()) {
                 FH2 = aj.j6.FH();
                 coVar2 = (df) aj.j6.Hw();
                 try {
                     if (!((g3() && i2 != Cz().lg.Hw() - 1 && coVar2.Xa() == this.DW.v5(tp(), Hw())) || dl.QX(coVar2.Ev()))) {
-                        DW = gn3.DW((df) coVar2);
+                        DW = gn2.DW((df) coVar2);
                         if (DW.cT()) {
                             if (coVar2.Xa() != DW) {
                                 Cz().g3.j6(coVar2, (co) DW);
                             }
                         } else if (dyVar2.cT()) {
                             if (dyVar2.e3()) {
-                                gn = ((dn) DW).gn();
+                                gn4 = ((dn) DW).gn();
                             }
-                            if (coVar2.Xa() != gn) {
-                                Cz().g3.j6(coVar2, gn);
+                            if (coVar2.Xa() != gn4) {
+                                Cz().g3.j6(coVar2, gn4);
                             }
                         } else {
                             try {
-                                gn = ((dn) dyVar2).j6(DW);
-                                if (coVar2.Xa() != gn) {
-                                    Cz().g3.j6(coVar2, gn);
+                                gn4 = ((dn) dyVar2).j6(DW);
+                                if (coVar2.Xa() != gn4) {
+                                    Cz().g3.j6(coVar2, gn4);
                                 }
                             } catch (gl e5) {
                             }
@@ -1742,30 +1742,30 @@ public final class cf extends dy {
                 } catch (gl e6) {
                 }
             }
-            sy = gn3.lp();
+            sy = gn2.lp();
             sy.j6.j6();
             while (sy.j6.DW()) {
                 FH3 = sy.j6.FH();
                 coVar2 = (df) sy.j6.Hw();
                 try {
                     if (!((g3() && i2 != Cz().lg.Hw() - 1 && coVar2.Xa() == this.DW.v5(tp(), Hw())) || dl.QX(coVar2.Ev()))) {
-                        DW = gn3.DW((df) coVar2);
+                        DW = gn2.DW((df) coVar2);
                         if (DW.cT()) {
                             if (coVar2.Xa() != DW) {
                                 Cz().g3.j6(coVar2, (co) DW);
                             }
                         } else if (dyVar2.cT()) {
                             if (dyVar2.e3()) {
-                                gn = ((dn) DW).gn();
+                                gn4 = ((dn) DW).gn();
                             }
-                            if (coVar2.Xa() != gn) {
-                                Cz().g3.j6(coVar2, gn);
+                            if (coVar2.Xa() != gn4) {
+                                Cz().g3.j6(coVar2, gn4);
                             }
                         } else {
                             try {
-                                gn = ((dn) dyVar2).j6(DW);
-                                if (coVar2.Xa() != gn) {
-                                    Cz().g3.j6(coVar2, gn);
+                                gn4 = ((dn) dyVar2).j6(DW);
+                                if (coVar2.Xa() != gn4) {
+                                    Cz().g3.j6(coVar2, gn4);
                                 }
                             } catch (gl e7) {
                             }
@@ -1774,13 +1774,13 @@ public final class cf extends dy {
                         while (Cz().sh.j6.DW()) {
                             dfVar = (df) Cz().sh.j6.Hw();
                             if (FH(j3, dfVar, coVar2) && dfVar.vJ()) {
-                                i4 = 0;
-                                while (i4 < dfVar.g3()) {
-                                    if (dfVar.Hw(i4) == FH3 && dfVar.FH(i4).cT() && ((cf) dfVar.FH(i4)).FH(DW((df) coVar2))) {
+                                i3 = 0;
+                                while (i3 < dfVar.g3()) {
+                                    if (dfVar.Hw(i3) == FH3 && dfVar.FH(i3).cT() && ((cf) dfVar.FH(i3)).FH(DW((df) coVar2))) {
                                         dfVar.j6((df) coVar2);
                                         break;
                                     }
-                                    i4++;
+                                    i3++;
                                 }
                                 continue;
                             }

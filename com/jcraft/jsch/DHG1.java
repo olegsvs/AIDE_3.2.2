@@ -189,10 +189,13 @@ public class DHG1 extends KeyExchange {
     }
 
     public boolean j6(Buffer buffer) {
+        Object obj;
+        Object obj2;
         SignatureRSA signatureRSA;
         Object e;
         boolean DW;
         Exception exception;
+        SignatureDSA signatureDSA;
         switch (this.lg) {
             case 31:
                 buffer.Hw();
@@ -225,9 +228,7 @@ public class DHG1 extends KeyExchange {
                 int i = VH + 4;
                 int i2;
                 int i3;
-                Object obj;
                 int i4;
-                Object obj2;
                 if (FH.equals("ssh-rsa")) {
                     this.a8 = 0;
                     i2 = i + 1;
@@ -283,7 +284,6 @@ public class DHG1 extends KeyExchange {
                         JSch.v5().j6(1, "ssh_rsa_verify: signature " + DW);
                     }
                 } else if (FH.equals("ssh-dss")) {
-                    SignatureDSA signatureDSA;
                     gn = (byte[]) null;
                     this.a8 = 1;
                     i2 = i + 1;

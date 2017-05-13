@@ -34,12 +34,12 @@ class bip {
     }
 
     void DW() {
+        OutputStream gZIPOutputStream;
         this.DW.close();
         if (this.FH == null) {
             if (this.DW.DW() == 0) {
                 throw new aui(this.Hw.Hw, JGitText.j6().startingReadStageWithoutWrittenRequestDataPendingIsNotSupported);
             }
-            OutputStream gZIPOutputStream;
             bly bmb = new bmb(this.Hw.EQ.j6);
             try {
                 gZIPOutputStream = new GZIPOutputStream(bmb);

@@ -227,12 +227,11 @@ class jt {
     }
 
     public co FH(int i, int i2) {
-        co DW;
-        int DW2 = this.Zo.DW(i);
-        if (DW2 == 1) {
+        int DW = this.Zo.DW(i);
+        if (DW == 1) {
             return this.Zo.FH(i);
         }
-        if (DW2 > 1) {
+        if (DW > 1) {
             throw new gi();
         }
         co FH;
@@ -262,17 +261,18 @@ class jt {
         FH = null;
         int i4 = 0;
         while (i4 < this.VH.Hw()) {
+            co DW2;
             if (((dm) this.VH.j6(i4)).FH(this.j6.FH.we(), this.j6.FH.tp(), i, true, i2, this.DW)) {
                 try {
-                    DW = ((dm) this.VH.j6(i4)).DW(this.j6.FH.we(), this.j6.FH.tp(), i, true, i2, this.DW);
+                    DW2 = ((dm) this.VH.j6(i4)).DW(this.j6.FH.we(), this.j6.FH.tp(), i, true, i2, this.DW);
                 } catch (gl e3) {
-                    DW = FH;
+                    DW2 = FH;
                 }
             } else {
-                DW = FH;
+                DW2 = FH;
             }
             i4++;
-            FH = DW;
+            FH = DW2;
         }
         if (FH != null) {
             return FH;
@@ -284,9 +284,9 @@ class jt {
             while (i3 < this.tp.Hw()) {
                 cf cfVar = (cf) this.tp.j6(i3);
                 try {
-                    DW = cfVar.DW(i, true, i2, this.j6.j6.J0(), this.j6.FH.we(), this.j6.FH.tp());
-                    if (DW.Ws()) {
-                        return DW;
+                    DW2 = cfVar.DW(i, true, i2, this.j6.j6.J0(), this.j6.FH.we(), this.j6.FH.tp());
+                    if (DW2.Ws()) {
+                        return DW2;
                     }
                     i3++;
                 } catch (gi e5) {

@@ -26,7 +26,7 @@ class uv$3 extends Thread {
         r1 = r1.v5;	 Catch:{ IOException -> 0x0076, all -> 0x008b }
         monitor-enter(r1);	 Catch:{ IOException -> 0x0076, all -> 0x008b }
         r2 = r3.j6;	 Catch:{ all -> 0x0073 }
-        r2 = r1.Zo;	 Catch:{ all -> 0x0073 }
+        r2 = r2.Zo;	 Catch:{ all -> 0x0073 }
         if (r2 == 0) goto L_0x0056;
     L_0x0024:
         monitor-exit(r1);	 Catch:{ all -> 0x0073 }

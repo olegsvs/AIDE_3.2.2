@@ -249,29 +249,29 @@ public class KeyPairPKCS8 extends KeyPair {
         String str2;
         try {
             if (Util.DW(bArr, EQ)) {
-                str = "aes128-cbc";
+                str2 = "aes128-cbc";
             } else if (Util.DW(bArr, we)) {
-                str = "aes192-cbc";
+                str2 = "aes192-cbc";
             } else if (Util.DW(bArr, J0)) {
-                str = "aes256-cbc";
+                str2 = "aes256-cbc";
             } else {
-                str = null;
+                str2 = null;
             }
             try {
-                return (Cipher) Class.forName(JSch.DW(str)).newInstance();
+                return (Cipher) Class.forName(JSch.DW(str2)).newInstance();
             } catch (Exception e) {
-                str2 = str;
+                str = str2;
             }
         } catch (Exception e2) {
-            str2 = null;
+            str = null;
             if (JSch.v5().j6(4)) {
-                str = "";
-                if (str2 == null) {
-                    str2 = "unknown oid: " + Util.FH(bArr);
+                str2 = "";
+                if (str == null) {
+                    str = "unknown oid: " + Util.FH(bArr);
                 } else {
-                    str2 = "function " + str2 + " is not supported";
+                    str = "function " + str + " is not supported";
                 }
-                JSch.v5().j6(4, "PKCS8: " + str2);
+                JSch.v5().j6(4, "PKCS8: " + str);
             }
             return null;
         }

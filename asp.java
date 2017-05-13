@@ -113,12 +113,12 @@ public class asp {
     }
 
     public void Hw() {
+        InputStream fileInputStream;
         if (this.v5 == null) {
             throw new IOException(JGitText.j6().dirCacheDoesNotHaveABackingFile);
         } else if (!this.v5.exists()) {
             v5();
         } else if (this.EQ == null || this.EQ.DW(this.v5)) {
-            InputStream fileInputStream;
             try {
                 fileInputStream = new FileInputStream(this.v5);
                 v5();

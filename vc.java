@@ -66,12 +66,12 @@ public class vc {
     }
 
     public static boolean DW(String str) {
-        InputStream fileInputStream;
         if (gn(str)) {
             return false;
         }
         long length = new File(str).length();
         int i = 8000 < length ? 8000 : (int) length;
+        InputStream fileInputStream;
         try {
             fileInputStream = new FileInputStream(str);
             byte[] bArr = new byte[i];

@@ -66,7 +66,7 @@ class o implements ek {
         for (int i2 = 0; i2 < i; i2++) {
             arrayList.add(this.DW.get((this.DW.size() - i) + i2));
         }
-        if (r1.VH != null) {
+        if (this.j6.j6.VH != null) {
             this.j6.j6.VH.j6(cwVar.er(), cwVar.aM(), arrayList);
         }
         this.DW.clear();

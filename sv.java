@@ -89,7 +89,6 @@ class sv implements Callable {
     }
 
     private void j6(String str, String str2) {
-        OutputStream fileOutputStream;
         ZipFile zipFile = new ZipFile(str2);
         Enumeration entries = zipFile.entries();
         List arrayList = new ArrayList();
@@ -115,6 +114,7 @@ class sv implements Callable {
                     }
                     if (obj == null) {
                         InputStream inputStream = zipFile.getInputStream(zipEntry);
+                        OutputStream fileOutputStream;
                         try {
                             fileOutputStream = new FileOutputStream(file);
                             ad.j6(inputStream, fileOutputStream, false);

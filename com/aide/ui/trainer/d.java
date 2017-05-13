@@ -33,6 +33,6 @@ public class d extends f {
     }
 
     public String j6() {
-        return c.gn(r1, r2);
+        return c.gn(this.j6, "full_title");
     }
 }

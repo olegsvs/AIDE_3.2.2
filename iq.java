@@ -665,10 +665,10 @@ class iq {
     }
 
     public co j6(int i, int i2, boolean z, dy dyVar) {
+        int max;
         dy Xa;
         int i3;
         int gW;
-        int max;
         co coVar;
         co FH;
         try {

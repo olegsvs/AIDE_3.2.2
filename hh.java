@@ -752,9 +752,9 @@ public class hh {
 
     private void Zo() {
         int i;
-        int i2;
         int J0 = J0();
         for (i = 0; i < J0; i++) {
+            int i2;
             this.OW.DW();
             int J02 = J0();
             Object obj = (!this.Hw || (J02 & 16384) == 0) ? null : 1;

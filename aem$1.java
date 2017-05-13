@@ -12,7 +12,7 @@ class aem$1 extends AbstractList {
     }
 
     public String j6(int i) {
-        aem.DW(i, this.j6.FH.DW.DW);
+        aem.DW(i, this.j6.FH.Zo.DW);
         return this.j6.j6(this.j6.FH.DW.FH + (i * 4)).EQ();
     }
 

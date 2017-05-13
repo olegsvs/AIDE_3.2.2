@@ -15,10 +15,10 @@ public class PreservingFileWriter extends FileWriter {
 
     public void close() {
         Throwable th;
-        Writer writer;
         Object obj = null;
-        Writer writer2 = null;
+        Writer writer = null;
         Reader reader;
+        Writer writer2;
         try {
             super.close();
             char[] cArr = new char[1024];
@@ -57,7 +57,7 @@ public class PreservingFileWriter extends FileWriter {
                         }
                         if (null != null) {
                             try {
-                                writer2.close();
+                                writer.close();
                             } catch (IOException e2) {
                             }
                         }
@@ -70,19 +70,19 @@ public class PreservingFileWriter extends FileWriter {
                 } catch (Throwable th2) {
                     th = th2;
                     reader = bufferedReader;
-                    writer = null;
+                    writer2 = null;
                 }
             }
             reader = new BufferedReader(new FileReader(this.DW));
             try {
-                writer = new BufferedWriter(new FileWriter(this.j6));
+                writer2 = new BufferedWriter(new FileWriter(this.j6));
                 while (true) {
                     int read2 = reader.read(cArr, 0, 1024);
                     if (read2 == -1) {
                         break;
                     }
                     try {
-                        writer.write(cArr, 0, read2);
+                        writer2.write(cArr, 0, read2);
                     } catch (Throwable th3) {
                         th = th3;
                     }
@@ -93,9 +93,9 @@ public class PreservingFileWriter extends FileWriter {
                     } catch (IOException e3) {
                     }
                 }
-                if (writer != null) {
+                if (writer2 != null) {
                     try {
-                        writer.close();
+                        writer2.close();
                     } catch (IOException e4) {
                     }
                 }
@@ -105,16 +105,16 @@ public class PreservingFileWriter extends FileWriter {
                 }
             } catch (Throwable th4) {
                 th = th4;
-                writer = null;
+                writer2 = null;
                 if (reader != null) {
                     try {
                         reader.close();
                     } catch (IOException e5) {
                     }
                 }
-                if (writer != null) {
+                if (writer2 != null) {
                     try {
-                        writer.close();
+                        writer2.close();
                     } catch (IOException e6) {
                     }
                 }
@@ -124,13 +124,13 @@ public class PreservingFileWriter extends FileWriter {
             }
         } catch (Throwable th5) {
             th = th5;
-            writer = null;
+            writer2 = null;
             reader = null;
             if (reader != null) {
                 reader.close();
             }
-            if (writer != null) {
-                writer.close();
+            if (writer2 != null) {
+                writer2.close();
             }
             if (this.DW != null && this.DW.exists()) {
                 this.DW.delete();

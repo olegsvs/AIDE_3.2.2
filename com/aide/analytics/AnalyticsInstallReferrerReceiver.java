@@ -11,7 +11,6 @@ import java.util.UUID;
 
 public class AnalyticsInstallReferrerReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
-        FileWriter fileWriter;
         try {
             new CampaignTrackingReceiver().onReceive(context, intent);
         } catch (Throwable th) {
@@ -23,6 +22,7 @@ public class AnalyticsInstallReferrerReceiver extends BroadcastReceiver {
         if (string != null) {
             File file = new File(dir, "tmp-" + UUID.randomUUID().toString());
             File file2 = new File(dir, UUID.randomUUID().toString());
+            FileWriter fileWriter;
             try {
                 fileWriter = new FileWriter(file);
                 fileWriter.write(string);

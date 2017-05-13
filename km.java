@@ -429,11 +429,11 @@ public class km extends gy {
     }
 
     private void FH(boolean z) {
-        int i;
         Hw(98);
         if (this.VH != 1) {
             throw new gz();
         }
+        int i;
         DW();
         if (this.VH == 17) {
             DW();

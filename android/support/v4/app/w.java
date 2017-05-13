@@ -211,7 +211,6 @@ final class w extends u implements Factory {
     public void j6(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
         int size;
         int i;
-        Fragment fragment;
         int i2 = 0;
         String str2 = str + "    ";
         if (this.Zo != null) {
@@ -222,6 +221,7 @@ final class w extends u implements Factory {
                 printWriter.print(Integer.toHexString(System.identityHashCode(this)));
                 printWriter.println(":");
                 for (i = 0; i < size; i++) {
+                    Fragment fragment;
                     fragment = (Fragment) this.Zo.get(i);
                     printWriter.print(str);
                     printWriter.print("  #");

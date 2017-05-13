@@ -30,7 +30,7 @@ public class j extends l {
     }
 
     public g j6(int i) {
-        return new g(c.DW(r1, r2, r3), this);
+        return new g(c.DW(this.j6, "Exercise", i), this);
     }
 
     public d FH() {

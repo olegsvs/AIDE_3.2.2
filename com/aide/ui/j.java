@@ -189,7 +189,7 @@ public class j {
     }
 
     public static boolean FH() {
-        return false;
+        return true;
     }
 
     public static boolean Hw() {

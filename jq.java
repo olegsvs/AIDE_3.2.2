@@ -35,8 +35,7 @@ class jq {
         while (i7 < i6) {
             char c;
             int i8;
-            int i9;
-            int i10;
+            Object obj2;
             char digit;
             while (i3 >= i4) {
                 i4 = this.j6.read(obj);
@@ -52,72 +51,73 @@ class jq {
                 i3 = 0;
             }
             int min = (Math.min(i4 - i3, i6 - i7) + i7) - 1;
-            int i11 = i7;
-            int i12 = i3;
-            while (i11 < min) {
-                Object obj2;
-                int i13;
+            int i9 = i7;
+            int i10 = i3;
+            while (i9 < min) {
                 Object obj3;
-                char c2 = obj[i12];
+                int i11;
+                int i12;
+                int i13;
+                char c2 = obj[i10];
                 if (c2 == '\\') {
-                    i3 = i12 + 1;
-                    c = obj[i12];
+                    i3 = i10 + 1;
+                    c = obj[i10];
                     if (c != '\\') {
-                        iArr[i11] = 1;
-                        i7 = i11 + 1;
-                        cArr[i11] = c;
+                        iArr[i9] = 1;
+                        i7 = i9 + 1;
+                        cArr[i9] = c;
                     } else if (i5 <= 0) {
-                        iArr[i11] = 1;
-                        i7 = i11 + 1;
-                        cArr[i11] = c;
+                        iArr[i9] = 1;
+                        i7 = i9 + 1;
+                        cArr[i9] = c;
                         i5--;
                     } else {
-                        obj2 = null;
-                        i12 = 0;
-                        i8 = i4;
-                        i9 = i3;
+                        obj3 = null;
+                        i10 = 0;
+                        i11 = i4;
+                        i12 = i3;
                         i4 = 0;
-                        i10 = i3;
+                        i8 = i3;
                         i3 = 0;
-                        i5 = i10;
+                        i5 = i8;
                         while (true) {
-                            if (i5 < i8) {
-                                i5 = i8 - i9;
-                                System.arraycopy(obj, i9, obj, 0, i5);
+                            if (i5 < i11) {
+                                i5 = i11 - i12;
+                                System.arraycopy(obj, i12, obj, 0, i5);
                                 i7 = this.j6.read(obj, i5, obj.length - i5);
                                 if (i7 != -1) {
                                     i7 = i5;
                                 } else {
                                     i7 += i5;
                                 }
-                                i9 = 0;
+                                i12 = 0;
                                 i13 = i5;
-                                i8 = i7;
+                                i11 = i7;
                             } else {
                                 i13 = i5;
                             }
-                            switch (obj2) {
+                            switch (obj3) {
                                 case ProxyTextView.TYPEFACE_NORMAL /*0*/:
                                     switch (obj[i13]) {
                                         case '\\':
                                             i5 = i3;
                                             i3 = 1;
                                             i7 = i4;
-                                            i4 = i12;
+                                            i4 = i10;
                                             break;
                                         case 'u':
                                             i5 = i3;
                                             i3 = 2;
                                             i7 = i4;
-                                            i4 = i12;
+                                            i4 = i10;
                                             break;
                                         default:
-                                            iArr[i11] = 1;
-                                            i7 = i11 + 1;
-                                            cArr[i11] = c;
+                                            iArr[i9] = 1;
+                                            i7 = i9 + 1;
+                                            cArr[i9] = c;
                                             i5 = 0;
-                                            i4 = i8;
-                                            i3 = i9;
+                                            i4 = i11;
+                                            i3 = i12;
                                             continue;
                                             continue;
                                             continue;
@@ -127,17 +127,17 @@ class jq {
                                     switch (obj[i13]) {
                                         case '\\':
                                             i5 = i3;
-                                            obj3 = null;
+                                            obj2 = null;
                                             i7 = i4;
-                                            i4 = i12;
+                                            i4 = i10;
                                             break;
                                         default:
-                                            iArr[i11] = 1;
-                                            i7 = i11 + 1;
-                                            cArr[i11] = c;
-                                            i5 = i13 - i9;
-                                            i4 = i8;
-                                            i3 = i9;
+                                            iArr[i9] = 1;
+                                            i7 = i9 + 1;
+                                            cArr[i9] = c;
+                                            i5 = i13 - i12;
+                                            i4 = i11;
+                                            i3 = i12;
                                             continue;
                                             continue;
                                             continue;
@@ -167,9 +167,9 @@ class jq {
                                         case 'd':
                                         case 'e':
                                         case 'f':
-                                            i10 = i4;
+                                            i8 = i4;
                                             i4 = Character.digit(obj[i13], 16);
-                                            i7 = i10;
+                                            i7 = i8;
                                             int i14 = i3;
                                             i3 = 3;
                                             i5 = i14;
@@ -178,15 +178,15 @@ class jq {
                                             i5 = i3;
                                             i3 = 2;
                                             i7 = i4;
-                                            i4 = i12;
+                                            i4 = i10;
                                             break;
                                         default:
-                                            iArr[i11] = 1;
-                                            i7 = i11 + 1;
-                                            cArr[i11] = c;
+                                            iArr[i9] = 1;
+                                            i7 = i9 + 1;
+                                            cArr[i9] = c;
                                             i5 = 0;
-                                            i4 = i8;
-                                            i3 = i9;
+                                            i4 = i11;
+                                            i3 = i12;
                                             continue;
                                             continue;
                                             continue;
@@ -219,15 +219,15 @@ class jq {
                                             i3 = 4;
                                             i5 = Character.digit(obj[i13], 16);
                                             i7 = i4;
-                                            i4 = i12;
+                                            i4 = i10;
                                             break;
                                         default:
-                                            iArr[i11] = 1;
-                                            i7 = i11 + 1;
-                                            cArr[i11] = c;
+                                            iArr[i9] = 1;
+                                            i7 = i9 + 1;
+                                            cArr[i9] = c;
                                             i5 = 0;
-                                            i4 = i8;
-                                            i3 = i9;
+                                            i4 = i11;
+                                            i3 = i12;
                                             continue;
                                             continue;
                                             continue;
@@ -258,17 +258,17 @@ class jq {
                                         case 'e':
                                         case 'f':
                                             i7 = Character.digit(obj[i13], 16);
-                                            i4 = i12;
-                                            i10 = i3;
+                                            i4 = i10;
+                                            i8 = i3;
                                             i3 = 5;
-                                            i5 = i10;
+                                            i5 = i8;
                                             break;
                                         default:
-                                            i7 = i11 + 1;
-                                            cArr[i11] = c;
+                                            i7 = i9 + 1;
+                                            cArr[i9] = c;
                                             i5 = 0;
-                                            i4 = i8;
-                                            i3 = i9;
+                                            i4 = i11;
+                                            i3 = i12;
                                             continue;
                                             continue;
                                             continue;
@@ -298,107 +298,107 @@ class jq {
                                         case 'd':
                                         case 'e':
                                         case 'f':
-                                            digit = (char) (Character.digit(obj[i13], 16) | (((i12 << 12) | (i3 << 8)) | (i4 << 4)));
+                                            digit = (char) (Character.digit(obj[i13], 16) | (((i10 << 12) | (i3 << 8)) | (i4 << 4)));
                                             if (digit == '\n' && digit != '\r' && (!this.Zo || digit != '\ufffe')) {
-                                                iArr[i11] = (i13 - i9) + 2;
-                                                i7 = i11 + 1;
-                                                cArr[i11] = digit;
-                                                i4 = i8;
+                                                iArr[i9] = (i13 - i12) + 2;
+                                                i7 = i9 + 1;
+                                                cArr[i9] = digit;
+                                                i4 = i11;
                                                 i3 = i13 + 1;
                                                 i5 = 0;
                                                 break;
                                             }
-                                            iArr[i11] = 1;
-                                            i7 = i11 + 1;
-                                            cArr[i11] = '\u0000';
-                                            i4 = i8;
+                                            iArr[i9] = 1;
+                                            i7 = i9 + 1;
+                                            cArr[i9] = '\u0000';
+                                            i4 = i11;
                                             i3 = i13 + 1;
                                             i5 = 0;
                                             break;
                                         default:
-                                            i7 = i11 + 1;
-                                            cArr[i11] = c;
+                                            i7 = i9 + 1;
+                                            cArr[i9] = c;
                                             i5 = 0;
-                                            i4 = i8;
-                                            i3 = i9;
+                                            i4 = i11;
+                                            i3 = i12;
                                             continue;
                                             continue;
                                     }
                                 default:
                                     i7 = i4;
                                     i5 = i3;
-                                    i4 = i12;
-                                    obj3 = obj2;
+                                    i4 = i10;
+                                    obj2 = obj3;
                                     break;
                             }
-                            obj2 = obj3;
+                            obj3 = obj2;
                             i3 = i5;
                             i5 = i13 + 1;
-                            i12 = i4;
+                            i10 = i4;
                             i4 = i7;
                         }
                     }
                 } else {
-                    iArr[i11] = 1;
-                    i7 = i11 + 1;
-                    cArr[i11] = c2;
-                    i11 = i7;
-                    i12++;
+                    iArr[i9] = 1;
+                    i7 = i9 + 1;
+                    cArr[i9] = c2;
+                    i9 = i7;
+                    i10++;
                 }
             }
-            i3 = i12 + 1;
-            c = obj[i12];
+            i3 = i10 + 1;
+            c = obj[i10];
             if (c != '\\') {
-                iArr[i11] = 1;
-                i7 = i11 + 1;
-                cArr[i11] = c;
+                iArr[i9] = 1;
+                i7 = i9 + 1;
+                cArr[i9] = c;
             } else if (i5 <= 0) {
-                obj2 = null;
-                i12 = 0;
-                i8 = i4;
-                i9 = i3;
+                obj3 = null;
+                i10 = 0;
+                i11 = i4;
+                i12 = i3;
                 i4 = 0;
-                i10 = i3;
+                i8 = i3;
                 i3 = 0;
-                i5 = i10;
+                i5 = i8;
                 while (true) {
-                    if (i5 < i8) {
+                    if (i5 < i11) {
                         i13 = i5;
                     } else {
-                        i5 = i8 - i9;
-                        System.arraycopy(obj, i9, obj, 0, i5);
+                        i5 = i11 - i12;
+                        System.arraycopy(obj, i12, obj, 0, i5);
                         i7 = this.j6.read(obj, i5, obj.length - i5);
                         if (i7 != -1) {
                             i7 += i5;
                         } else {
                             i7 = i5;
                         }
-                        i9 = 0;
+                        i12 = 0;
                         i13 = i5;
-                        i8 = i7;
+                        i11 = i7;
                     }
-                    switch (obj2) {
+                    switch (obj3) {
                         case ProxyTextView.TYPEFACE_NORMAL /*0*/:
                             switch (obj[i13]) {
                                 case '\\':
                                     i5 = i3;
                                     i3 = 1;
                                     i7 = i4;
-                                    i4 = i12;
+                                    i4 = i10;
                                     break;
                                 case 'u':
                                     i5 = i3;
                                     i3 = 2;
                                     i7 = i4;
-                                    i4 = i12;
+                                    i4 = i10;
                                     break;
                                 default:
-                                    iArr[i11] = 1;
-                                    i7 = i11 + 1;
-                                    cArr[i11] = c;
+                                    iArr[i9] = 1;
+                                    i7 = i9 + 1;
+                                    cArr[i9] = c;
                                     i5 = 0;
-                                    i4 = i8;
-                                    i3 = i9;
+                                    i4 = i11;
+                                    i3 = i12;
                                     continue;
                                     continue;
                                     continue;
@@ -408,17 +408,17 @@ class jq {
                             switch (obj[i13]) {
                                 case '\\':
                                     i5 = i3;
-                                    obj3 = null;
+                                    obj2 = null;
                                     i7 = i4;
-                                    i4 = i12;
+                                    i4 = i10;
                                     break;
                                 default:
-                                    iArr[i11] = 1;
-                                    i7 = i11 + 1;
-                                    cArr[i11] = c;
-                                    i5 = i13 - i9;
-                                    i4 = i8;
-                                    i3 = i9;
+                                    iArr[i9] = 1;
+                                    i7 = i9 + 1;
+                                    cArr[i9] = c;
+                                    i5 = i13 - i12;
+                                    i4 = i11;
+                                    i3 = i12;
                                     continue;
                                     continue;
                                     continue;
@@ -448,9 +448,9 @@ class jq {
                                 case 'd':
                                 case 'e':
                                 case 'f':
-                                    i10 = i4;
+                                    i8 = i4;
                                     i4 = Character.digit(obj[i13], 16);
-                                    i7 = i10;
+                                    i7 = i8;
                                     int i142 = i3;
                                     i3 = 3;
                                     i5 = i142;
@@ -459,15 +459,15 @@ class jq {
                                     i5 = i3;
                                     i3 = 2;
                                     i7 = i4;
-                                    i4 = i12;
+                                    i4 = i10;
                                     break;
                                 default:
-                                    iArr[i11] = 1;
-                                    i7 = i11 + 1;
-                                    cArr[i11] = c;
+                                    iArr[i9] = 1;
+                                    i7 = i9 + 1;
+                                    cArr[i9] = c;
                                     i5 = 0;
-                                    i4 = i8;
-                                    i3 = i9;
+                                    i4 = i11;
+                                    i3 = i12;
                                     continue;
                                     continue;
                                     continue;
@@ -500,15 +500,15 @@ class jq {
                                     i3 = 4;
                                     i5 = Character.digit(obj[i13], 16);
                                     i7 = i4;
-                                    i4 = i12;
+                                    i4 = i10;
                                     break;
                                 default:
-                                    iArr[i11] = 1;
-                                    i7 = i11 + 1;
-                                    cArr[i11] = c;
+                                    iArr[i9] = 1;
+                                    i7 = i9 + 1;
+                                    cArr[i9] = c;
                                     i5 = 0;
-                                    i4 = i8;
-                                    i3 = i9;
+                                    i4 = i11;
+                                    i3 = i12;
                                     continue;
                                     continue;
                                     continue;
@@ -539,17 +539,17 @@ class jq {
                                 case 'e':
                                 case 'f':
                                     i7 = Character.digit(obj[i13], 16);
-                                    i4 = i12;
-                                    i10 = i3;
+                                    i4 = i10;
+                                    i8 = i3;
                                     i3 = 5;
-                                    i5 = i10;
+                                    i5 = i8;
                                     break;
                                 default:
-                                    i7 = i11 + 1;
-                                    cArr[i11] = c;
+                                    i7 = i9 + 1;
+                                    cArr[i9] = c;
                                     i5 = 0;
-                                    i4 = i8;
-                                    i3 = i9;
+                                    i4 = i11;
+                                    i3 = i12;
                                     continue;
                                     continue;
                                     continue;
@@ -579,43 +579,43 @@ class jq {
                                 case 'd':
                                 case 'e':
                                 case 'f':
-                                    digit = (char) (Character.digit(obj[i13], 16) | (((i12 << 12) | (i3 << 8)) | (i4 << 4)));
+                                    digit = (char) (Character.digit(obj[i13], 16) | (((i10 << 12) | (i3 << 8)) | (i4 << 4)));
                                     if (digit == '\n') {
                                         break;
                                     }
-                                    iArr[i11] = 1;
-                                    i7 = i11 + 1;
-                                    cArr[i11] = '\u0000';
-                                    i4 = i8;
+                                    iArr[i9] = 1;
+                                    i7 = i9 + 1;
+                                    cArr[i9] = '\u0000';
+                                    i4 = i11;
                                     i3 = i13 + 1;
                                     i5 = 0;
                                     break;
                                 default:
-                                    i7 = i11 + 1;
-                                    cArr[i11] = c;
+                                    i7 = i9 + 1;
+                                    cArr[i9] = c;
                                     i5 = 0;
-                                    i4 = i8;
-                                    i3 = i9;
+                                    i4 = i11;
+                                    i3 = i12;
                                     continue;
                                     continue;
                             }
                         default:
                             i7 = i4;
                             i5 = i3;
-                            i4 = i12;
-                            obj3 = obj2;
+                            i4 = i10;
+                            obj2 = obj3;
                             break;
                     }
-                    obj2 = obj3;
+                    obj3 = obj2;
                     i3 = i5;
                     i5 = i13 + 1;
-                    i12 = i4;
+                    i10 = i4;
                     i4 = i7;
                 }
             } else {
-                iArr[i11] = 1;
-                i7 = i11 + 1;
-                cArr[i11] = c;
+                iArr[i9] = 1;
+                i7 = i9 + 1;
+                cArr[i9] = c;
                 i5--;
             }
         }

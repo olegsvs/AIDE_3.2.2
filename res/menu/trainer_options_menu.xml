@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>>
+<?xml version="1.0" encoding="utf-8"?>
 <menu>
     <item android:id="@x/trainerMenuSoundOn" android:title="@ab/trainer_sound_on" android:showAsAction="1" />
     <item android:id="@x/trainerMenuSoundOff" android:title="@ab/trainer_sound_off" android:showAsAction="1" />

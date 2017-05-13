@@ -19,24 +19,24 @@ public class bcw {
         if (j > 2147483647L || DW > 2147483647L || j6 > 4294967295L) {
             throw new IllegalArgumentException(JGitText.j6().hugeIndexesAreNotSupportedByJgitYet);
         }
-        int i2;
         this.DW = new int[((int) j)];
         this.FH = new long[((int) DW)];
         this.Hw = new int[this.DW.length];
         this.v5 = new int[this.FH.length];
         Iterator it = this.j6.iterator();
+        int i2 = 0;
         int i3 = 0;
-        int i4 = 0;
         while (it.hasNext()) {
+            int i4;
             j = ((bcm) it.next()).j6();
             if (j < 2147483647L) {
-                i2 = i4 + 1;
-                this.DW[i4] = (int) j;
-                i4 = i2;
+                i4 = i3 + 1;
+                this.DW[i3] = (int) j;
+                i3 = i4;
             } else {
-                i2 = i3 + 1;
-                this.FH[i3] = j;
-                i3 = i2;
+                i4 = i2 + 1;
+                this.FH[i2] = j;
+                i2 = i4;
             }
         }
         Arrays.sort(this.DW);
@@ -45,13 +45,13 @@ public class bcw {
         while (it2.hasNext()) {
             DW = ((bcm) it2.next()).j6();
             if (DW < 2147483647L) {
-                i2 = i + 1;
+                i4 = i + 1;
                 this.Hw[Arrays.binarySearch(this.DW, (int) DW)] = i;
-                i = i2;
+                i = i4;
             } else {
-                i2 = i + 1;
+                i4 = i + 1;
                 this.v5[Arrays.binarySearch(this.FH, DW)] = i;
-                i = i2;
+                i = i4;
             }
         }
     }

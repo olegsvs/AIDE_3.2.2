@@ -203,9 +203,9 @@ public class aom {
     }
 
     public PrivateKey j6(URL url, String str) {
-        KeySpec j6;
         PrivateKey generatePrivate;
         InputStream dataInputStream = new DataInputStream(url.openStream());
+        KeySpec j6;
         try {
             byte[] j62 = j6(dataInputStream);
             j6 = j6(j62, str);

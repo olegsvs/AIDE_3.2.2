@@ -145,6 +145,7 @@ public class iv implements bt {
     }
 
     public String DW(co coVar) {
+        String str;
         int i = 0;
         if (coVar.fY()) {
             switch (((dy) coVar).Gj()) {
@@ -174,21 +175,21 @@ public class iv implements bt {
         }
         int DW;
         int i2;
-        String str;
+        String str2;
         if (coVar.AL()) {
-            String str2 = "";
+            String str3 = "";
             dy dyVar = (dy) coVar;
             while (dyVar.AL()) {
                 DW = ((ce) dyVar).DW();
-                str2 = str2 + "[";
+                str3 = str3 + "[";
                 for (i2 = 1; i2 < DW; i2++) {
-                    str2 = str2 + ",";
+                    str3 = str3 + ",";
                 }
-                str = str2 + "]";
+                str2 = str3 + "]";
                 dyVar = ((ce) dyVar).FH();
-                str2 = str;
+                str3 = str2;
             }
-            return dyVar.iW() + str2;
+            return dyVar.iW() + str3;
         } else if (coVar.cT()) {
             if (!((cf) coVar).hz()) {
                 return ((cf) coVar).Xa().iW() + "." + ((cf) coVar).br();
@@ -201,36 +202,35 @@ public class iv implements bt {
         } else if (coVar.zh() && ((df) coVar).u7()) {
             return coVar.Xa().iW() + "." + this.DW.j6(coVar.aq());
         } else {
-            String str3;
+            String str4;
             if (coVar.zh() && ((df) coVar).gn()) {
-                String str4;
-                str = coVar.Xa().j3().iW();
+                str2 = coVar.Xa().j3().iW();
                 if (((df) coVar).aj()) {
-                    str = str + ".this";
+                    str2 = str2 + ".this";
                 } else {
-                    str = str + "." + this.DW.j6(coVar.aq());
+                    str2 = str2 + "." + this.DW.j6(coVar.aq());
                 }
                 if (((df) coVar).OW() > 0) {
-                    str4 = str + "<";
+                    str = str2 + "<";
                     for (i2 = 0; i2 < ((df) coVar).OW(); i2++) {
-                        str4 = str4 + ((df) coVar).gn(i2).eU();
+                        str = str + ((df) coVar).gn(i2).eU();
                         if (i2 < ((df) coVar).OW() - 1) {
-                            str4 = str4 + ", ";
+                            str = str + ", ";
                         }
                     }
-                    str = str4 + ">";
+                    str2 = str + ">";
                 }
                 if (((df) coVar).aj()) {
-                    str3 = str + "[";
+                    str4 = str2 + "[";
                 } else {
-                    str3 = str + "(";
+                    str4 = str2 + "(";
                 }
-                str = str3;
+                str2 = str4;
                 while (i < ((df) coVar).lp()) {
                     if (i > 0) {
-                        str = str + ", ";
+                        str2 = str2 + ", ";
                     }
-                    str4 = str + j6(((df) coVar).VH(i));
+                    str = str2 + j6(((df) coVar).VH(i));
                     try {
                         dy v5 = ((df) coVar).v5(i);
                         if (i == ((df) coVar).lp() - 1) {
@@ -238,22 +238,22 @@ public class iv implements bt {
                                 if (v5.AL()) {
                                     v5 = ((ce) v5).FH();
                                 }
-                                str3 = str4 + v5.iW() + " ... ";
+                                str4 = str + v5.iW() + " ... ";
                                 i++;
-                                str = str3;
+                                str2 = str4;
                             }
                         }
-                        str3 = str4 + v5.iW();
+                        str4 = str + v5.iW();
                     } catch (gl e) {
-                        str3 = str4 + "?";
+                        str4 = str + "?";
                     }
                     i++;
-                    str = str3;
+                    str2 = str4;
                 }
                 if (((df) coVar).aj()) {
-                    return str + "]";
+                    return str2 + "]";
                 }
-                return str + ")";
+                return str2 + ")";
             } else if (coVar.Z1()) {
                 return this.DW.j6(((di) coVar).aq());
             } else {
@@ -268,40 +268,40 @@ public class iv implements bt {
                     int kQ = gn.kQ() - 1;
                     int i3 = 1;
                     cf cfVar = gn;
-                    str = "";
+                    str2 = "";
                     while (true) {
                         int XX = cfVar.XX();
                         if (i3 != 0 && XX > 0) {
                             int i4 = XX - 1;
-                            String str5 = str;
+                            String str5 = str2;
                             DW = kQ;
                             while (i4 >= 0) {
-                                str = "";
+                                str2 = "";
                                 if (((dn) coVar).FH()[DW] == 2) {
-                                    str = "? extends ";
+                                    str2 = "? extends ";
                                 }
                                 if (((dn) coVar).FH()[DW] == 3) {
-                                    str = "? super ";
+                                    str2 = "? super ";
                                 }
-                                str = str + ((dn) coVar).DW()[DW].iW();
+                                str2 = str2 + ((dn) coVar).DW()[DW].iW();
                                 if (((dn) coVar).FH()[DW] == 1) {
-                                    str3 = "?";
+                                    str4 = "?";
                                 } else {
-                                    str3 = str;
+                                    str4 = str2;
                                 }
                                 if (i4 < XX - 1) {
-                                    str3 = str3 + ", " + str5;
+                                    str4 = str4 + ", " + str5;
                                 } else {
-                                    str3 = str3 + ">" + str5;
+                                    str4 = str4 + ">" + str5;
                                 }
                                 DW--;
                                 i4--;
-                                str5 = str3;
+                                str5 = str4;
                             }
-                            str = "<" + str5;
+                            str2 = "<" + str5;
                             kQ = DW;
                         }
-                        String str6 = cfVar.br() + str;
+                        String str6 = cfVar.br() + str2;
                         if (cfVar.we()) {
                             i2 = i3;
                         } else {
@@ -311,7 +311,7 @@ public class iv implements bt {
                         if (Xa != cfVar) {
                             cfVar = Xa;
                             int i5 = i2;
-                            str = "." + str6;
+                            str2 = "." + str6;
                             i3 = i5;
                         } else if (cfVar.rN().Zo()) {
                             return str6;

@@ -110,11 +110,11 @@ public class TokenStreamRewriteEngine implements IASDebugStream, TokenStream {
         if (list == null || list.size() == 0) {
             return j6(i, i2);
         }
+        RewriteOperation rewriteOperation;
         StringBuffer stringBuffer = new StringBuffer();
         int i3 = 0;
         int i4 = i;
         while (i4 >= 0 && i4 <= i2 && i4 < this.j6.size()) {
-            RewriteOperation rewriteOperation;
             int i5;
             if (i3 < list.size()) {
                 rewriteOperation = (RewriteOperation) list.get(i3);

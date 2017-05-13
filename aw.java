@@ -932,6 +932,7 @@ public class aw {
 
     private void j6(dr drVar, int i, co coVar) {
         co DW;
+        fy cb;
         co coVar2;
         co Xa;
         fy dx;
@@ -970,7 +971,6 @@ public class aw {
                 DW = this.j6.cb.DW(drVar.we(), drVar.tp(), drVar.XL(i));
                 try {
                     if (!((df) DW).sy()) {
-                        fy cb;
                         if (gm.j6) {
                             j6(drVar, DW, ((df) DW).Xa(), 6);
                         }

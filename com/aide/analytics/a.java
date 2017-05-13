@@ -108,6 +108,7 @@ public final class a {
     }
 
     public static void j6(String str, File file) {
+        Reader fileReader;
         if (FH()) {
             Hw("logInstalledEvents: " + str + " dir: " + file);
             File[] listFiles = file.listFiles();
@@ -115,7 +116,6 @@ public final class a {
                 for (File file2 : listFiles) {
                     if (!file2.getName().startsWith("tmp-") && file2.isFile()) {
                         String str2 = null;
-                        Reader fileReader;
                         try {
                             fileReader = new FileReader(file2);
                             str2 = new BufferedReader(fileReader).readLine();

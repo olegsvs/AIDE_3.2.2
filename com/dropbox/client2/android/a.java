@@ -4,29 +4,58 @@ import aml;
 import amr;
 import ams;
 import amu;
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 
 public class a extends aml {
+    public void j6(android.content.Context r4) {
+        /* JADX: method processing error */
+/*
+        Error: jadx.core.utils.exceptions.JadxRuntimeException: Can't find immediate dominator for block B:6:0x0021 in {2, 5, 7} preds:[]
+	at jadx.core.dex.visitors.blocksmaker.BlockProcessor.computeDominators(BlockProcessor.java:129)
+	at jadx.core.dex.visitors.blocksmaker.BlockProcessor.processBlocksTree(BlockProcessor.java:48)
+	at jadx.core.dex.visitors.blocksmaker.BlockProcessor.visit(BlockProcessor.java:38)
+	at jadx.core.dex.visitors.DepthTraversal.visit(DepthTraversal.java:31)
+	at jadx.core.dex.visitors.DepthTraversal.visit(DepthTraversal.java:17)
+	at jadx.core.ProcessClass.process(ProcessClass.java:37)
+	at jadx.api.JadxDecompiler.processClass(JadxDecompiler.java:281)
+	at jadx.api.JavaClass.decompile(JavaClass.java:59)
+	at jadx.api.JadxDecompiler$1.run(JadxDecompiler.java:161)
+*/
+        /*
+        r3 = this;
+        r0 = r3.Hw();
+        r1 = r0.j6;
+        r2 = 1;
+        r1 = com.dropbox.client2.android.AuthActivity.j6(r4, r1, r2);
+        if (r1 != 0) goto L_0x000e;
+    L_0x000d:
+        return;
+    L_0x000e:
+        r1 = r0.j6;
+        r0 = r0.DW;
+        com.dropbox.client2.android.AuthActivity.j6(r1, r0);
+        r0 = new android.content.Intent;
+        r1 = com.dropbox.client2.android.AuthActivity.class;
+        r0.<init>(r4, r1);
+        r1 = r4 instanceof android.app.Activity;
+        if (r1 != 0) goto L_0x0026;
+    L_0x0020:
+        goto L_0x0026;
+        r1 = 268435456; // 0x10000000 float:2.5243549E-29 double:1.32624737E-315;
+        r0.addFlags(r1);
+    L_0x0026:
+        r4.startActivity(r0);
+        goto L_0x000d;
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.dropbox.client2.android.a.j6(android.content.Context):void");
+    }
+
     public a(ams ams, amu amu) {
         super(ams, amu);
     }
 
     public a(ams ams, amu amu, amr amr) {
         super(ams, amu, amr);
-    }
-
-    public void j6(Context context) {
-        ams Hw = Hw();
-        if (AuthActivity.j6(context, Hw.j6, true)) {
-            AuthActivity.j6(Hw.j6, Hw.DW);
-            Intent intent = new Intent(context, AuthActivity.class);
-            if (!(context instanceof Activity)) {
-                intent.addFlags(268435456);
-            }
-            context.startActivity(intent);
-        }
     }
 
     public boolean j6() {

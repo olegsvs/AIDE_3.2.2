@@ -492,13 +492,13 @@ public class SourceEntity implements Parcelable {
     }
 
     protected void DW(dk dkVar, dy dyVar) {
+        dy a_;
+        int lp;
         int i;
         String j6;
         int VH;
         co FH = dkVar.cb.FH(this.j3);
         if (FH.zh() && ((df) FH).gn()) {
-            dy a_;
-            int lp;
             if (dyVar != null) {
                 try {
                     if (dyVar.Z1()) {

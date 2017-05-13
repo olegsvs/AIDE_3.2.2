@@ -370,20 +370,20 @@ final class anx {
 
     void j6(ano ano) {
         int i;
+        int i2;
         short[] sArr = this.u7;
         short[] sArr2 = this.EQ.Zo;
         int[] iArr = this.EQ.VH;
-        int i2 = this.EQ.gn;
+        int i3 = this.EQ.gn;
         short s = this.EQ.tp;
         for (i = 0; i <= 15; i++) {
             ano.vJ[i] = (short) 0;
         }
         sArr[(ano.Mz[ano.ca] * 2) + 1] = (short) 0;
-        int i3 = ano.ca + 1;
+        int i4 = ano.ca + 1;
         i = 0;
-        while (i3 < 573) {
-            int i4;
-            int i5 = ano.Mz[i3];
+        while (i4 < 573) {
+            int i5 = ano.Mz[i4];
             int i6 = sArr[(sArr[(i5 * 2) + 1] * 2) + 1] + 1;
             if (i6 > s) {
                 i++;
@@ -393,18 +393,18 @@ final class anx {
             if (i5 <= this.tp) {
                 short[] sArr3 = ano.vJ;
                 sArr3[i6] = (short) (sArr3[i6] + 1);
-                if (i5 >= i2) {
-                    i4 = iArr[i5 - i2];
+                if (i5 >= i3) {
+                    i2 = iArr[i5 - i3];
                 } else {
-                    i4 = 0;
+                    i2 = 0;
                 }
                 short s2 = sArr[i5 * 2];
-                ano.OW = ((i6 + i4) * s2) + ano.OW;
+                ano.OW = ((i6 + i2) * s2) + ano.OW;
                 if (sArr2 != null) {
-                    ano.br += (i4 + sArr2[(i5 * 2) + 1]) * s2;
+                    ano.br += (i2 + sArr2[(i5 * 2) + 1]) * s2;
                 }
             }
-            i3++;
+            i4++;
         }
         if (i != 0) {
             do {
@@ -421,16 +421,16 @@ final class anx {
                 sArr4[s] = (short) (sArr4[s] - 1);
                 i -= 2;
             } while (i > 0);
-            i6 = i3;
+            i6 = i4;
             while (s != (short) 0) {
                 i = ano.vJ[s];
                 while (i != 0) {
                     i6--;
-                    i4 = ano.Mz[i6];
-                    if (i4 <= this.tp) {
-                        if (sArr[(i4 * 2) + 1] != s) {
-                            ano.OW = (int) (((long) ano.OW) + ((((long) s) - ((long) sArr[(i4 * 2) + 1])) * ((long) sArr[i4 * 2])));
-                            sArr[(i4 * 2) + 1] = (short) s;
+                    i2 = ano.Mz[i6];
+                    if (i2 <= this.tp) {
+                        if (sArr[(i2 * 2) + 1] != s) {
+                            ano.OW = (int) (((long) ano.OW) + ((((long) s) - ((long) sArr[(i2 * 2) + 1])) * ((long) sArr[i2 * 2])));
+                            sArr[(i2 * 2) + 1] = (short) s;
                         }
                         i--;
                     }

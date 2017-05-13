@@ -185,7 +185,6 @@ public class tc {
     }
 
     private void we() {
-        int j6;
         int i;
         synchronized (this.j6) {
             Map map = this.FH;
@@ -197,6 +196,7 @@ public class tc {
         int i3 = 0;
         for (String str : this.v5.keySet()) {
             String str2;
+            int j6;
             if (this.Hw.contains(str2)) {
                 if (this.DW.contains(str2)) {
                     j6 = j6(str2, (SyntaxError[]) this.v5.get(str2));

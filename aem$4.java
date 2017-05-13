@@ -12,7 +12,7 @@ class aem$4 extends AbstractList {
     }
 
     public aew j6(int i) {
-        aem.DW(i, this.j6.FH.Hw.DW);
+        aem.DW(r0, r1);
         return this.j6.j6(this.j6.FH.Hw.FH + (i * 12)).J8();
     }
 

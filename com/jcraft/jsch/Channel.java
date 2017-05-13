@@ -564,35 +564,35 @@ public abstract class Channel implements Runnable {
     }
 
     static void j6(Session session) {
+        int i;
         Channel[] channelArr = (Channel[]) null;
         synchronized (U2) {
             Channel[] channelArr2 = new Channel[U2.size()];
-            int i = 0;
             int i2 = 0;
-            while (i < U2.size()) {
-                int i3;
+            int i3 = 0;
+            while (i2 < U2.size()) {
                 try {
-                    Channel channel = (Channel) U2.elementAt(i);
+                    Channel channel = (Channel) U2.elementAt(i2);
                     if (channel.a8 == session) {
-                        int i4 = i2 + 1;
+                        int i4 = i3 + 1;
                         try {
-                            channelArr2[i2] = channel;
-                            i3 = i4;
+                            channelArr2[i3] = channel;
+                            i = i4;
                         } catch (Exception e) {
-                            i3 = i4;
+                            i = i4;
                         }
                     } else {
-                        i3 = i2;
+                        i = i3;
                     }
                 } catch (Exception e2) {
-                    i3 = i2;
+                    i = i3;
                 }
-                i++;
-                i2 = i3;
+                i2++;
+                i3 = i;
             }
         }
-        for (i3 = 0; i3 < i2; i3++) {
-            channelArr2[i3].tp();
+        for (i = 0; i < i3; i++) {
+            channelArr2[i].tp();
         }
     }
 
@@ -614,8 +614,9 @@ public abstract class Channel implements Runnable {
                     j6(this);
                     return;
                 }
+                j6(this);
             }
-        } finally {
+        } catch (Throwable th) {
             j6(this);
         }
     }

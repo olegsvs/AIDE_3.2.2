@@ -57,6 +57,7 @@ public class jj {
     }
 
     private void j6(dr drVar, int i, int i2, int i3, cf cfVar, fd fdVar, fd fdVar2, fd fdVar3, fd fdVar4, fd fdVar5) {
+        int nw;
         int KD;
         for (int lg = drVar.lg(i) - 1; lg >= 0; lg--) {
             j6(drVar, drVar.Hw(i, lg), i2, i3, cfVar, fdVar, fdVar2, fdVar3, fdVar4, fdVar5);
@@ -65,7 +66,6 @@ public class jj {
             j6(drVar, i, i3, -1, fdVar, fdVar2, fdVar3, fdVar4, fdVar5);
         }
         if (drVar.sy(i) && drVar.Hw(drVar.aM(i), 0) == i && drVar.J8(i) == 16 && ((df) drVar.QX(i)).Xa() == cfVar) {
-            int nw;
             nw = drVar.nw(i) - drVar.nw(i3);
             KD = drVar.KD(i);
             if (nw == 0) {

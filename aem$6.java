@@ -12,8 +12,8 @@ class aem$6 extends AbstractList {
     }
 
     public aes j6(int i) {
-        aem.DW(i, this.j6.FH.DW.DW);
-        return this.j6.j6(this.j6.FH.Zo.FH + (i * 8)).J0();
+        aem.DW(i, this.j6.FH.Zo.DW);
+        return this.j6.j6(r1.FH.Zo.FH + (i * 8)).J0();
     }
 
     public int size() {

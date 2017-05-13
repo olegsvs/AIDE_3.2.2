@@ -173,12 +173,12 @@ public abstract class bjz extends bjs {
     }
 
     protected byte[] j6(File file, bka bka) {
+        byte[] bArr;
         try {
             axq j6 = bev.j6(file, bka.DW());
             if (j6 == null) {
                 return v5;
             }
-            byte[] bArr;
             try {
                 bArr = "HEAD";
                 awq DW = j6.DW(bArr);
@@ -205,10 +205,10 @@ public abstract class bjz extends bjs {
             if (v5 == null) {
                 return v5;
             }
-            byte[] j6;
             try {
                 this.j6.j6();
                 long FH = bka.FH();
+                byte[] j6;
                 if (tp()) {
                     long j = 65536;
                     if (FH <= j) {
@@ -228,8 +228,7 @@ public abstract class bjz extends bjs {
                         j6(v5);
                         return j6;
                     } else {
-                        j6 = DW(bka.v5());
-                        j = FH((InputStream) j6);
+                        j = FH(DW(bka.v5()));
                         j6 = j6(DW(v5), j);
                         j6(v5);
                         return j6;
@@ -238,9 +237,8 @@ public abstract class bjz extends bjs {
                 j6 = j6(v5, FH);
                 return j6;
             } catch (Throwable th) {
-                j6 = th;
             } finally {
-                j6(r0);
+                j6(v5);
             }
         } catch (IOException e) {
             return v5;

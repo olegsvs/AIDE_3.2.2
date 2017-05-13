@@ -65,7 +65,9 @@ public class DHGEX256 extends KeyExchange {
     public boolean j6(Buffer buffer) {
         Object obj;
         Object obj2;
+        SignatureRSA signatureRSA;
         Object e;
+        boolean DW;
         Exception exception;
         SignatureDSA signatureDSA;
         int VH;
@@ -101,7 +103,6 @@ public class DHGEX256 extends KeyExchange {
                     System.err.println("type: must be SSH_MSG_KEX_DH_GEX_REPLY " + VH);
                     return false;
                 }
-                boolean DW;
                 this.U2 = buffer.tp();
                 byte[] gn = buffer.gn();
                 byte[] tp = buffer.tp();
@@ -132,7 +133,6 @@ public class DHGEX256 extends KeyExchange {
                 int i3;
                 int i4;
                 if (FH.equals("ssh-rsa")) {
-                    SignatureRSA signatureRSA;
                     this.a8 = 0;
                     i2 = i + 1;
                     i3 = i2 + 1;

@@ -439,9 +439,9 @@ class i extends s {
     }
 
     public String j6(String str, String str2, u uVar) {
+        OutputStream fileOutputStream;
         try {
             api j6 = api.j6(new File(str));
-            OutputStream fileOutputStream;
             try {
                 File createTempFile = File.createTempFile("gitcontent", ".txt", this.j6.getExternalCacheDir());
                 fileOutputStream = new FileOutputStream(createTempFile);

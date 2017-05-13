@@ -26,7 +26,7 @@ public class g {
         if (c.we(this.j6, "CodeHint_1") != null) {
             return 1;
         }
-        if (c.we(r1, r2) != null) {
+        if (c.we(this.j6, "CodeHint_2") != null) {
             return 2;
         }
         if (c.we(this.j6, "CodeHint_3") != null) {
@@ -61,7 +61,7 @@ public class g {
     }
 
     public String v5() {
-        return c.gn(c.we(this.j6, "ExpectedOutput"), "hint");
+        return c.gn(c.we("title".j6, "ExpectedOutput"), "hint");
     }
 
     public String Zo() {

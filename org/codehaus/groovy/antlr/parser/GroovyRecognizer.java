@@ -748,9 +748,8 @@ public class GroovyRecognizer extends LLkParser implements GroovyTokenTypes {
 
     public final void Zo(int i) {
         AST ast;
-        boolean z;
         AST ast2 = null;
-        boolean z2 = false;
+        boolean z = false;
         this.XL = null;
         ASTPair aSTPair = new ASTPair();
         Token DW = DW(1);
@@ -782,14 +781,14 @@ public class GroovyRecognizer extends LLkParser implements GroovyTokenTypes {
                                 throw new NoViableAltException(DW(1), v5());
                         }
                         FH(138);
-                        z2 = true;
+                        z = true;
                     } catch (RecognitionException e) {
                     }
                     v5(Zo);
                     ParserSharedInputState parserSharedInputState2 = this.Ws;
                     parserSharedInputState2.DW--;
                 }
-                if (z2) {
+                if (z) {
                     switch (j6(1)) {
                         case 128:
                         case 205:
@@ -974,6 +973,7 @@ public class GroovyRecognizer extends LLkParser implements GroovyTokenTypes {
                 int Zo2;
                 ParserSharedInputState parserSharedInputState3;
                 int i2;
+                boolean z2;
                 ParserSharedInputState parserSharedInputState4;
                 if (rN.Hw(j6(1)) && er.Hw(j6(2))) {
                     Zo2 = Zo();
@@ -983,13 +983,13 @@ public class GroovyRecognizer extends LLkParser implements GroovyTokenTypes {
                         P8();
                         i2 = 1;
                     } catch (RecognitionException e2) {
-                        z = false;
+                        z2 = false;
                     }
                     v5(Zo2);
                     parserSharedInputState4 = this.Ws;
                     parserSharedInputState4.DW--;
                 } else {
-                    z = false;
+                    z2 = false;
                 }
                 if (i2 == 0) {
                     if (rN.Hw(j6(1)) && yS.Hw(j6(2))) {
@@ -1000,13 +1000,13 @@ public class GroovyRecognizer extends LLkParser implements GroovyTokenTypes {
                             ko();
                             i2 = 1;
                         } catch (RecognitionException e3) {
-                            z = false;
+                            z2 = false;
                         }
                         v5(Zo2);
                         parserSharedInputState4 = this.Ws;
                         parserSharedInputState4.DW--;
                     } else {
-                        z = false;
+                        z2 = false;
                     }
                     if (i2 == 0) {
                         if (gW.Hw(j6(1)) && BT.Hw(j6(2))) {
@@ -1017,13 +1017,13 @@ public class GroovyRecognizer extends LLkParser implements GroovyTokenTypes {
                                 a8();
                                 i2 = 1;
                             } catch (RecognitionException e4) {
-                                z = false;
+                                z2 = false;
                             }
                             v5(Zo2);
                             parserSharedInputState4 = this.Ws;
                             parserSharedInputState4.DW--;
                         } else {
-                            z = false;
+                            z2 = false;
                         }
                         if (i2 == 0) {
                             if (j6(1) == 87 && j6(2) == 136) {
@@ -1035,13 +1035,13 @@ public class GroovyRecognizer extends LLkParser implements GroovyTokenTypes {
                                     FH(136);
                                     i2 = 1;
                                 } catch (RecognitionException e5) {
-                                    z = false;
+                                    z2 = false;
                                 }
                                 v5(Zo2);
                                 parserSharedInputState4 = this.Ws;
                                 parserSharedInputState4.DW--;
                             } else {
-                                z = false;
+                                z2 = false;
                             }
                             if (i2 == 0) {
                                 if (!ei.Hw(j6(1)) || !Zo.Hw(j6(2))) {
@@ -1054,13 +1054,13 @@ public class GroovyRecognizer extends LLkParser implements GroovyTokenTypes {
                                             FH(82);
                                             i2 = 1;
                                         } catch (RecognitionException e6) {
-                                            z = false;
+                                            z2 = false;
                                         }
                                         v5(Zo2);
                                         parserSharedInputState4 = this.Ws;
                                         parserSharedInputState4.DW--;
                                     } else {
-                                        z = false;
+                                        z2 = false;
                                     }
                                     if (i2 == 0) {
                                         if (!SI.Hw(j6(1)) || !KD.Hw(j6(2))) {
@@ -1122,14 +1122,14 @@ public class GroovyRecognizer extends LLkParser implements GroovyTokenTypes {
                                 parserSharedInputState5.DW++;
                                 try {
                                     FH(126);
-                                    z2 = true;
+                                    z = true;
                                 } catch (RecognitionException e7) {
                                 }
                                 v5(i2);
                                 parserSharedInputState3 = this.Ws;
                                 parserSharedInputState3.DW--;
                             }
-                            if (z2) {
+                            if (z) {
                                 Z1();
                                 this.aM.j6(aSTPair, this.XL);
                             } else if (P8.Hw(j6(1)) && Zo.Hw(j6(2))) {
@@ -8491,10 +8491,10 @@ public class GroovyRecognizer extends LLkParser implements GroovyTokenTypes {
     }
 
     public final void J0(int i) {
-        boolean z;
         AST ast;
         this.XL = null;
         ASTPair aSTPair = new ASTPair();
+        boolean z;
         if (ei.Hw(j6(1)) && Zo.Hw(j6(2))) {
             int Zo = Zo();
             ParserSharedInputState parserSharedInputState = this.Ws;

@@ -14,7 +14,7 @@ public class h {
     }
 
     public String DW() {
-        return c.DW(this.j6.j6);
+        return c.DW(this.j6);
     }
 
     public int FH() {

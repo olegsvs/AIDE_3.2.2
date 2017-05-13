@@ -1175,9 +1175,9 @@ public class jw implements cd {
         if (dyVar.n5() && dyVar2.n5() && j6(cwVar, dyVar, dyVar2, fkVar)) {
             return true;
         }
-        fy Zo;
         dy dyVar3;
         if (dyVar.n5()) {
+            fy Zo;
             Zo = ((dn) dyVar).Zo();
             Zo.j6.j6();
             while (Zo.j6.DW()) {

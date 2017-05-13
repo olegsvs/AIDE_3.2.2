@@ -357,36 +357,36 @@ public class um {
     }
 
     private boolean ef() {
-        String str;
         List<String> Hw = j.j3().DW(Ws()).Hw();
         List<String> arrayList = new ArrayList();
-        for (String str2 : Hw) {
-            arrayList.add(str2.replace(" ", "").replace("\t", ""));
+        for (String replace : Hw) {
+            String replace2;
+            arrayList.add(replace2.replace(" ", "").replace("\t", ""));
         }
         int i = 0;
         while (i < gW().QX()) {
             h DW = gW().DW(i);
-            String replace = DW.DW().replace(" ", "").replace("\t", "");
+            String replace3 = DW.DW().replace(" ", "").replace("\t", "");
             int Hw2 = DW.Hw();
             int FH = DW.FH();
             int j6 = DW.j6();
             int i2 = 0;
             int i3 = 1;
-            for (String str22 : arrayList) {
-                if (str22.length() > 0 && i3 >= FH && i3 <= j6) {
-                    if (str22.contains(replace)) {
+            for (String replace22 : arrayList) {
+                if (replace22.length() > 0 && i3 >= FH && i3 <= j6) {
+                    if (replace22.contains(replace3)) {
                         i2++;
-                    } else if (replace.startsWith(str22)) {
+                    } else if (replace3.startsWith(replace22)) {
                         Object obj;
-                        String substring = replace.substring(str22.length());
+                        String substring = replace3.substring(replace22.length());
                         for (int i4 = i3; i4 < arrayList.size(); i4++) {
-                            str22 = (String) arrayList.get(i4);
-                            if (str22.length() != 0) {
-                                if (!str22.startsWith(substring)) {
-                                    if (!substring.startsWith(str22)) {
+                            replace22 = (String) arrayList.get(i4);
+                            if (replace22.length() != 0) {
+                                if (!replace22.startsWith(substring)) {
+                                    if (!substring.startsWith(replace22)) {
                                         break;
                                     }
-                                    substring = substring.substring(str22.length());
+                                    substring = substring.substring(replace22.length());
                                     if (substring.length() == 0) {
                                         obj = 1;
                                         break;

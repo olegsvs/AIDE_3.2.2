@@ -12,7 +12,7 @@ class aem$5 extends AbstractList {
     }
 
     public aeq j6(int i) {
-        aem.DW(i, this.j6.FH.DW.DW);
+        aem.DW(i, this.j6.FH.v5.DW);
         return this.j6.j6(this.j6.FH.v5.FH + (i * 8)).we();
     }
 

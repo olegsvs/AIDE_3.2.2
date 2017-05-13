@@ -35,10 +35,8 @@ class kp {
         while (i7 < i6) {
             char c;
             int i8;
-            Object obj2;
             int i9;
-            int i10;
-            Object obj3;
+            Object obj2;
             if (i3 >= i4) {
                 i4 = this.j6.read(obj);
                 if (i4 == -1) {
@@ -53,104 +51,106 @@ class kp {
                 i3 = 0;
             }
             int min = (Math.min(i4 - i3, i6 - i7) + i7) - 1;
-            int i11 = i7;
-            int i12 = i3;
-            while (i11 < min) {
+            int i10 = i7;
+            int i11 = i3;
+            while (i10 < min) {
+                Object obj3;
+                int i12;
                 int i13;
                 char digit;
-                char c2 = obj[i12];
+                char c2 = obj[i11];
                 if (c2 == '\\') {
-                    i7 = i12 + 1;
-                    c = obj[i12];
+                    i7 = i11 + 1;
+                    c = obj[i11];
                     if (c != '\\') {
-                        iArr[i11] = 1;
-                        i3 = i11 + 1;
-                        cArr[i11] = c;
+                        iArr[i10] = 1;
+                        i3 = i10 + 1;
+                        cArr[i10] = c;
                         i8 = i3;
                         i3 = i5;
                         i5 = i4;
                         i4 = i8;
                     } else if (i5 <= 0) {
-                        iArr[i11] = 1;
-                        i3 = i11 + 1;
-                        cArr[i11] = c;
+                        iArr[i10] = 1;
+                        i3 = i10 + 1;
+                        cArr[i10] = c;
                         i8 = i3;
                         i3 = i5 - 1;
                         i5 = i4;
                         i4 = i8;
                     } else {
-                        obj2 = null;
-                        i12 = 0;
+                        obj3 = null;
+                        i11 = 0;
                         i5 = 0;
-                        i9 = i4;
-                        i13 = i7;
+                        i12 = i4;
+                        i9 = i7;
                         i3 = i7;
                         i7 = 0;
                         while (true) {
-                            if (i3 < i9) {
-                                i3 = i9 - i13;
-                                System.arraycopy(obj, i13, obj, 0, i3);
+                            if (i3 < i12) {
+                                i3 = i12 - i9;
+                                System.arraycopy(obj, i9, obj, 0, i3);
                                 i4 = this.j6.read(obj, i3, obj.length - i3);
                                 if (i4 != -1) {
                                     i4 = i3;
                                 } else {
                                     i4 += i3;
                                 }
-                                i13 = 0;
-                                i10 = i3;
-                                i9 = i4;
+                                i9 = 0;
+                                i13 = i3;
+                                i12 = i4;
                             } else {
-                                i10 = i3;
+                                i13 = i3;
                             }
-                            switch (obj2) {
+                            switch (obj3) {
                                 case ProxyTextView.TYPEFACE_NORMAL /*0*/:
-                                    switch (obj[i10]) {
+                                    switch (obj[i13]) {
                                         case '\\':
                                             i3 = i7;
                                             i7 = 1;
                                             i4 = i5;
-                                            i5 = i12;
+                                            i5 = i11;
                                             break;
                                         case 'u':
                                             i3 = i7;
                                             i7 = 2;
                                             i4 = i5;
-                                            i5 = i12;
+                                            i5 = i11;
                                             break;
                                         default:
-                                            iArr[i11] = 1;
-                                            i4 = i11 + 1;
-                                            cArr[i11] = c;
+                                            iArr[i10] = 1;
+                                            i4 = i10 + 1;
+                                            cArr[i10] = c;
                                             i3 = 0;
-                                            i5 = i9;
-                                            i7 = i13;
+                                            i5 = i12;
+                                            i7 = i9;
                                             continue;
                                             continue;
                                             continue;
                                             continue;
                                     }
                                 case ProxyTextView.TYPEFACE_SANS /*1*/:
-                                    switch (obj[i10]) {
+                                    switch (obj[i13]) {
                                         case '\\':
                                             i3 = i7;
-                                            obj3 = null;
+                                            obj2 = null;
                                             i4 = i5;
-                                            i5 = i12;
+                                            i5 = i11;
                                             break;
                                         default:
-                                            iArr[i11] = 1;
-                                            i4 = i11 + 1;
-                                            cArr[i11] = c;
-                                            i3 = i10 - i13;
-                                            i5 = i9;
-                                            i7 = i13;
+                                            iArr[i10] = 1;
+                                            i4 = i10 + 1;
+                                            cArr[i10] = c;
+                                            i3 = i13 - i9;
+                                            i5 = i12;
+                                            i7 = i9;
                                             continue;
                                             continue;
                                             continue;
                                             continue;
                                     }
                                 case ProxyTextView.TYPEFACE_SERIF /*2*/:
-                                    switch (obj[i10]) {
+                                    switch (obj[i13]) {
                                         case '0':
                                         case ProxyTextView.INPUTTYPE_textEmailSubject /*49*/:
                                         case '2':
@@ -174,7 +174,7 @@ class kp {
                                         case 'e':
                                         case 'f':
                                             i8 = i5;
-                                            i5 = Character.digit(obj[i10], 16);
+                                            i5 = Character.digit(obj[i13], 16);
                                             i4 = i8;
                                             int i14 = i7;
                                             i7 = 3;
@@ -184,22 +184,22 @@ class kp {
                                             i3 = i7;
                                             i7 = 2;
                                             i4 = i5;
-                                            i5 = i12;
+                                            i5 = i11;
                                             break;
                                         default:
-                                            iArr[i11] = 1;
-                                            i4 = i11 + 1;
-                                            cArr[i11] = c;
+                                            iArr[i10] = 1;
+                                            i4 = i10 + 1;
+                                            cArr[i10] = c;
                                             i3 = 0;
-                                            i5 = i9;
-                                            i7 = i13;
+                                            i5 = i12;
+                                            i7 = i9;
                                             continue;
                                             continue;
                                             continue;
                                             continue;
                                     }
                                 case ProxyTextView.TYPEFACE_MONOSPACE /*3*/:
-                                    switch (obj[i10]) {
+                                    switch (obj[i13]) {
                                         case '0':
                                         case ProxyTextView.INPUTTYPE_textEmailSubject /*49*/:
                                         case '2':
@@ -223,24 +223,24 @@ class kp {
                                         case 'e':
                                         case 'f':
                                             i7 = 4;
-                                            i3 = Character.digit(obj[i10], 16);
+                                            i3 = Character.digit(obj[i13], 16);
                                             i4 = i5;
-                                            i5 = i12;
+                                            i5 = i11;
                                             break;
                                         default:
-                                            iArr[i11] = 1;
-                                            i4 = i11 + 1;
-                                            cArr[i11] = c;
+                                            iArr[i10] = 1;
+                                            i4 = i10 + 1;
+                                            cArr[i10] = c;
                                             i3 = 0;
-                                            i5 = i9;
-                                            i7 = i13;
+                                            i5 = i12;
+                                            i7 = i9;
                                             continue;
                                             continue;
                                             continue;
                                             continue;
                                     }
                                 case ProxyTextView.INPUTTYPE_datetime /*4*/:
-                                    switch (obj[i10]) {
+                                    switch (obj[i13]) {
                                         case '0':
                                         case ProxyTextView.INPUTTYPE_textEmailSubject /*49*/:
                                         case '2':
@@ -263,25 +263,25 @@ class kp {
                                         case 'd':
                                         case 'e':
                                         case 'f':
-                                            i4 = Character.digit(obj[i10], 16);
-                                            i5 = i12;
+                                            i4 = Character.digit(obj[i13], 16);
+                                            i5 = i11;
                                             i8 = i7;
                                             i7 = 5;
                                             i3 = i8;
                                             break;
                                         default:
-                                            i4 = i11 + 1;
-                                            cArr[i11] = c;
+                                            i4 = i10 + 1;
+                                            cArr[i10] = c;
                                             i3 = 0;
-                                            i5 = i9;
-                                            i7 = i13;
+                                            i5 = i12;
+                                            i7 = i9;
                                             continue;
                                             continue;
                                             continue;
                                             continue;
                                     }
                                 case 5:
-                                    switch (obj[i10]) {
+                                    switch (obj[i13]) {
                                         case '0':
                                         case ProxyTextView.INPUTTYPE_textEmailSubject /*49*/:
                                         case '2':
@@ -304,43 +304,43 @@ class kp {
                                         case 'd':
                                         case 'e':
                                         case 'f':
-                                            digit = (char) (Character.digit(obj[i10], 16) | (((i12 << 12) | (i7 << 8)) | (i5 << 4)));
+                                            digit = (char) (Character.digit(obj[i13], 16) | (((i11 << 12) | (i7 << 8)) | (i5 << 4)));
                                             if (digit == '\n' && digit != '\r' && (!this.Zo || digit != '\ufffe')) {
-                                                iArr[i11] = (i10 - i13) + 2;
-                                                i4 = i11 + 1;
-                                                cArr[i11] = digit;
-                                                i5 = i9;
-                                                i7 = i10 + 1;
+                                                iArr[i10] = (i13 - i9) + 2;
+                                                i4 = i10 + 1;
+                                                cArr[i10] = digit;
+                                                i5 = i12;
+                                                i7 = i13 + 1;
                                                 i3 = 0;
                                                 break;
                                             }
-                                            iArr[i11] = 1;
-                                            i4 = i11 + 1;
-                                            cArr[i11] = '\u0000';
-                                            i5 = i9;
-                                            i7 = i10 + 1;
+                                            iArr[i10] = 1;
+                                            i4 = i10 + 1;
+                                            cArr[i10] = '\u0000';
+                                            i5 = i12;
+                                            i7 = i13 + 1;
                                             i3 = 0;
                                             break;
                                         default:
-                                            i4 = i11 + 1;
-                                            cArr[i11] = c;
+                                            i4 = i10 + 1;
+                                            cArr[i10] = c;
                                             i3 = 0;
-                                            i5 = i9;
-                                            i7 = i13;
+                                            i5 = i12;
+                                            i7 = i9;
                                             continue;
                                             continue;
                                     }
                                 default:
                                     i4 = i5;
                                     i3 = i7;
-                                    i5 = i12;
-                                    obj3 = obj2;
+                                    i5 = i11;
+                                    obj2 = obj3;
                                     break;
                             }
-                            obj2 = obj3;
+                            obj3 = obj2;
                             i7 = i3;
-                            i3 = i10 + 1;
-                            i12 = i5;
+                            i3 = i13 + 1;
+                            i11 = i5;
                             i5 = i4;
                         }
                     }
@@ -350,96 +350,96 @@ class kp {
                     i3 = i7;
                     i7 = i8;
                 } else {
-                    iArr[i11] = 1;
-                    i3 = i11 + 1;
-                    cArr[i11] = c2;
-                    i11 = i3;
-                    i12++;
+                    iArr[i10] = 1;
+                    i3 = i10 + 1;
+                    cArr[i10] = c2;
+                    i10 = i3;
+                    i11++;
                 }
             }
-            i7 = i12 + 1;
-            c = obj[i12];
+            i7 = i11 + 1;
+            c = obj[i11];
             if (c != '\\') {
-                iArr[i11] = 1;
-                i3 = i11 + 1;
-                cArr[i11] = c;
+                iArr[i10] = 1;
+                i3 = i10 + 1;
+                cArr[i10] = c;
                 i8 = i3;
                 i3 = i5;
                 i5 = i4;
                 i4 = i8;
             } else if (i5 <= 0) {
-                obj2 = null;
-                i12 = 0;
+                obj3 = null;
+                i11 = 0;
                 i5 = 0;
-                i9 = i4;
-                i13 = i7;
+                i12 = i4;
+                i9 = i7;
                 i3 = i7;
                 i7 = 0;
                 while (true) {
-                    if (i3 < i9) {
-                        i10 = i3;
+                    if (i3 < i12) {
+                        i13 = i3;
                     } else {
-                        i3 = i9 - i13;
-                        System.arraycopy(obj, i13, obj, 0, i3);
+                        i3 = i12 - i9;
+                        System.arraycopy(obj, i9, obj, 0, i3);
                         i4 = this.j6.read(obj, i3, obj.length - i3);
                         if (i4 != -1) {
                             i4 += i3;
                         } else {
                             i4 = i3;
                         }
-                        i13 = 0;
-                        i10 = i3;
-                        i9 = i4;
+                        i9 = 0;
+                        i13 = i3;
+                        i12 = i4;
                     }
-                    switch (obj2) {
+                    switch (obj3) {
                         case ProxyTextView.TYPEFACE_NORMAL /*0*/:
-                            switch (obj[i10]) {
+                            switch (obj[i13]) {
                                 case '\\':
                                     i3 = i7;
                                     i7 = 1;
                                     i4 = i5;
-                                    i5 = i12;
+                                    i5 = i11;
                                     break;
                                 case 'u':
                                     i3 = i7;
                                     i7 = 2;
                                     i4 = i5;
-                                    i5 = i12;
+                                    i5 = i11;
                                     break;
                                 default:
-                                    iArr[i11] = 1;
-                                    i4 = i11 + 1;
-                                    cArr[i11] = c;
+                                    iArr[i10] = 1;
+                                    i4 = i10 + 1;
+                                    cArr[i10] = c;
                                     i3 = 0;
-                                    i5 = i9;
-                                    i7 = i13;
+                                    i5 = i12;
+                                    i7 = i9;
                                     continue;
                                     continue;
                                     continue;
                                     continue;
                             }
                         case ProxyTextView.TYPEFACE_SANS /*1*/:
-                            switch (obj[i10]) {
+                            switch (obj[i13]) {
                                 case '\\':
                                     i3 = i7;
-                                    obj3 = null;
+                                    obj2 = null;
                                     i4 = i5;
-                                    i5 = i12;
+                                    i5 = i11;
                                     break;
                                 default:
-                                    iArr[i11] = 1;
-                                    i4 = i11 + 1;
-                                    cArr[i11] = c;
-                                    i3 = i10 - i13;
-                                    i5 = i9;
-                                    i7 = i13;
+                                    iArr[i10] = 1;
+                                    i4 = i10 + 1;
+                                    cArr[i10] = c;
+                                    i3 = i13 - i9;
+                                    i5 = i12;
+                                    i7 = i9;
                                     continue;
                                     continue;
                                     continue;
                                     continue;
                             }
                         case ProxyTextView.TYPEFACE_SERIF /*2*/:
-                            switch (obj[i10]) {
+                            switch (obj[i13]) {
                                 case '0':
                                 case ProxyTextView.INPUTTYPE_textEmailSubject /*49*/:
                                 case '2':
@@ -463,7 +463,7 @@ class kp {
                                 case 'e':
                                 case 'f':
                                     i8 = i5;
-                                    i5 = Character.digit(obj[i10], 16);
+                                    i5 = Character.digit(obj[i13], 16);
                                     i4 = i8;
                                     int i142 = i7;
                                     i7 = 3;
@@ -473,22 +473,22 @@ class kp {
                                     i3 = i7;
                                     i7 = 2;
                                     i4 = i5;
-                                    i5 = i12;
+                                    i5 = i11;
                                     break;
                                 default:
-                                    iArr[i11] = 1;
-                                    i4 = i11 + 1;
-                                    cArr[i11] = c;
+                                    iArr[i10] = 1;
+                                    i4 = i10 + 1;
+                                    cArr[i10] = c;
                                     i3 = 0;
-                                    i5 = i9;
-                                    i7 = i13;
+                                    i5 = i12;
+                                    i7 = i9;
                                     continue;
                                     continue;
                                     continue;
                                     continue;
                             }
                         case ProxyTextView.TYPEFACE_MONOSPACE /*3*/:
-                            switch (obj[i10]) {
+                            switch (obj[i13]) {
                                 case '0':
                                 case ProxyTextView.INPUTTYPE_textEmailSubject /*49*/:
                                 case '2':
@@ -512,24 +512,24 @@ class kp {
                                 case 'e':
                                 case 'f':
                                     i7 = 4;
-                                    i3 = Character.digit(obj[i10], 16);
+                                    i3 = Character.digit(obj[i13], 16);
                                     i4 = i5;
-                                    i5 = i12;
+                                    i5 = i11;
                                     break;
                                 default:
-                                    iArr[i11] = 1;
-                                    i4 = i11 + 1;
-                                    cArr[i11] = c;
+                                    iArr[i10] = 1;
+                                    i4 = i10 + 1;
+                                    cArr[i10] = c;
                                     i3 = 0;
-                                    i5 = i9;
-                                    i7 = i13;
+                                    i5 = i12;
+                                    i7 = i9;
                                     continue;
                                     continue;
                                     continue;
                                     continue;
                             }
                         case ProxyTextView.INPUTTYPE_datetime /*4*/:
-                            switch (obj[i10]) {
+                            switch (obj[i13]) {
                                 case '0':
                                 case ProxyTextView.INPUTTYPE_textEmailSubject /*49*/:
                                 case '2':
@@ -552,25 +552,25 @@ class kp {
                                 case 'd':
                                 case 'e':
                                 case 'f':
-                                    i4 = Character.digit(obj[i10], 16);
-                                    i5 = i12;
+                                    i4 = Character.digit(obj[i13], 16);
+                                    i5 = i11;
                                     i8 = i7;
                                     i7 = 5;
                                     i3 = i8;
                                     break;
                                 default:
-                                    i4 = i11 + 1;
-                                    cArr[i11] = c;
+                                    i4 = i10 + 1;
+                                    cArr[i10] = c;
                                     i3 = 0;
-                                    i5 = i9;
-                                    i7 = i13;
+                                    i5 = i12;
+                                    i7 = i9;
                                     continue;
                                     continue;
                                     continue;
                                     continue;
                             }
                         case 5:
-                            switch (obj[i10]) {
+                            switch (obj[i13]) {
                                 case '0':
                                 case ProxyTextView.INPUTTYPE_textEmailSubject /*49*/:
                                 case '2':
@@ -593,43 +593,43 @@ class kp {
                                 case 'd':
                                 case 'e':
                                 case 'f':
-                                    digit = (char) (Character.digit(obj[i10], 16) | (((i12 << 12) | (i7 << 8)) | (i5 << 4)));
+                                    digit = (char) (Character.digit(obj[i13], 16) | (((i11 << 12) | (i7 << 8)) | (i5 << 4)));
                                     if (digit == '\n') {
                                         break;
                                     }
-                                    iArr[i11] = 1;
-                                    i4 = i11 + 1;
-                                    cArr[i11] = '\u0000';
-                                    i5 = i9;
-                                    i7 = i10 + 1;
+                                    iArr[i10] = 1;
+                                    i4 = i10 + 1;
+                                    cArr[i10] = '\u0000';
+                                    i5 = i12;
+                                    i7 = i13 + 1;
                                     i3 = 0;
                                     break;
                                 default:
-                                    i4 = i11 + 1;
-                                    cArr[i11] = c;
+                                    i4 = i10 + 1;
+                                    cArr[i10] = c;
                                     i3 = 0;
-                                    i5 = i9;
-                                    i7 = i13;
+                                    i5 = i12;
+                                    i7 = i9;
                                     continue;
                                     continue;
                             }
                         default:
                             i4 = i5;
                             i3 = i7;
-                            i5 = i12;
-                            obj3 = obj2;
+                            i5 = i11;
+                            obj2 = obj3;
                             break;
                     }
-                    obj2 = obj3;
+                    obj3 = obj2;
                     i7 = i3;
-                    i3 = i10 + 1;
-                    i12 = i5;
+                    i3 = i13 + 1;
+                    i11 = i5;
                     i5 = i4;
                 }
             } else {
-                iArr[i11] = 1;
-                i3 = i11 + 1;
-                cArr[i11] = c;
+                iArr[i10] = 1;
+                i3 = i10 + 1;
+                cArr[i10] = c;
                 i8 = i3;
                 i3 = i5 - 1;
                 i5 = i4;

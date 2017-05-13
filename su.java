@@ -205,10 +205,10 @@ public class su {
     }
 
     private void j6(String str, String str2, boolean z) {
-        HttpURLConnection httpURLConnection;
         if (Thread.interrupted()) {
             throw new InterruptedException();
         }
+        HttpURLConnection httpURLConnection;
         Map headerFields;
         List list;
         File file = new File(str2);
@@ -400,10 +400,10 @@ public class su {
     }
 
     private void j6(String str) {
-        uy j6;
         if (Thread.interrupted()) {
             throw new InterruptedException();
         }
+        uy j6;
         try {
             j6 = uz.j6(Arrays.asList(new String[]{"/system/bin/chmod", "755", str}), null, null, true, null, null);
             if (j6.j6() != 0) {

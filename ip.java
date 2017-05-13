@@ -210,13 +210,12 @@ class ip {
     }
 
     private void v5(int i) {
-        int Hw;
         co Mr = this.Hw.Mr();
         int lg = this.v5.lg(i);
         int i2 = 1;
         while (i2 < lg) {
-            int Hw2 = this.v5.Hw(i, i2);
-            int gW = this.v5.gW(Hw2);
+            int Hw = this.v5.Hw(i, i2);
+            int gW = this.v5.gW(Hw);
             try {
                 if (Mr.cT()) {
                     Mr = ((cf) Mr).DW(gW, true, 0, this.gn.a8(), this.v5.we(), this.v5.tp());
@@ -224,33 +223,34 @@ class ip {
                     int i3 = gW;
                     Mr = ((dm) Mr).j6(this.v5.we(), this.v5.tp(), i3, true, 0, (dm) Mr);
                 }
-                j6(Hw2, Mr);
+                j6(Hw, Mr);
                 i2 += 2;
             } catch (gl e) {
                 co coVar = Mr;
-                Hw(Hw2, "Unknown type or package </C>" + this.v5.BT(Hw2) + "<//C>");
+                Hw(Hw, "Unknown type or package </C>" + this.v5.BT(Hw) + "<//C>");
                 if (coVar.qp()) {
-                    j6(Hw2, (dm) coVar);
+                    j6(Hw, (dm) coVar);
                     return;
                 }
                 return;
             } catch (gi e2) {
-                Hw(Hw2, "Ambiguous type </C>" + this.v5.BT(Hw2) + "<//C>");
+                Hw(Hw, "Ambiguous type </C>" + this.v5.BT(Hw) + "<//C>");
                 return;
             }
         }
+        int Hw2;
         if (Mr.cT()) {
-            Hw = this.v5.Hw(i, this.v5.lg(i) - 2);
+            Hw2 = this.v5.Hw(i, this.v5.lg(i) - 2);
             try {
-                this.gn.DW(this.v5.gW(Hw), (cf) Mr);
+                this.gn.DW(this.v5.gW(Hw2), (cf) Mr);
                 return;
             } catch (gj e3) {
-                Hw(Hw, "A type named </C>" + this.v5.BT(Hw) + "<//C> has already been imported");
+                Hw(Hw2, "A type named </C>" + this.v5.BT(Hw2) + "<//C> has already been imported");
                 return;
             }
         }
-        Hw = this.v5.Hw(i, this.v5.lg(i) - 2);
-        Hw(Hw, "Unknown type </C>" + this.v5.BT(Hw) + "<//C>");
+        Hw2 = this.v5.Hw(i, this.v5.lg(i) - 2);
+        Hw(Hw2, "Unknown type </C>" + this.v5.BT(Hw2) + "<//C>");
     }
 
     private void Zo(int i) {
@@ -905,6 +905,7 @@ class ip {
         int a8;
         co FH;
         fy jO;
+        int Hw;
         switch (this.v5.rN(this.v5.aM(this.v5.aM(i)))) {
             case 120:
             case 128:
@@ -1047,7 +1048,6 @@ class ip {
             }
             dy a_;
             if (this.DW.DW) {
-                int Hw;
                 int gW;
                 dy Hw2;
                 int Hw3 = this.v5.Hw(i, 1);
@@ -4497,7 +4497,6 @@ class ip {
     }
 
     private void J8(int i, dy dyVar) {
-        df dfVar;
         int lg = this.v5.lg(i);
         if (lg != 1) {
             j6(i, lg, dyVar, this.v5.Mz(i));
@@ -4517,6 +4516,7 @@ class ip {
                     break;
             }
         }
+        df dfVar;
         int Hw = this.v5.Hw(i, 0);
         this.gn.j6(Hw, dyVar, this.v5.Mz(i));
         if (this.v5.J0(Hw)) {

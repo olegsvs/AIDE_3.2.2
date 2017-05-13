@@ -8,6 +8,6 @@ class bq implements Runnable {
     }
 
     public void run() {
-        this.j6.j6.Zo.FH();
+        this.j6.Zo.FH();
     }
 }

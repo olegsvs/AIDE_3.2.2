@@ -105,12 +105,12 @@ public class d {
     }
 
     public static String DW(String str) {
+        String stringBuffer;
         Throwable th;
         if (str == null) {
             return "";
         }
         BufferedReader bufferedReader;
-        String stringBuffer;
         try {
             StringBuffer stringBuffer2 = new StringBuffer();
             bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(str), "UTF-8"));

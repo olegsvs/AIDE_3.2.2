@@ -31,16 +31,16 @@ public class bmm extends Thread {
     }
 
     public void run() {
+        int i;
         try {
             byte[] bArr = new byte[1024];
-            int i = 0;
+            int i2 = 0;
             while (true) {
-                int i2;
-                if (i > 0) {
+                if (i2 > 0) {
                     this.DW.flush();
-                    i2 = i - 1;
+                    i = i2 - 1;
                 } else {
-                    i2 = i;
+                    i = i2;
                 }
                 if (!this.FH) {
                     try {
@@ -58,15 +58,15 @@ public class bmm extends Thread {
                             if (obj != null) {
                                 try {
                                     interrupt();
-                                    i = i2;
+                                    i2 = i;
                                 } catch (IOException e2) {
                                 }
                             } else {
-                                i = i2;
+                                i2 = i;
                             }
                         }
                     } catch (InterruptedIOException e3) {
-                        i = i2 + 1;
+                        i2 = i + 1;
                     }
                 }
                 break;

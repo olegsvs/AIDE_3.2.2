@@ -25,7 +25,6 @@ public abstract class bgb extends bhs {
     }
 
     public synchronized bho j6(bjd bjd, bfp bfp, bkx bkx, int i) {
-        String DW;
         Session j6;
         int i2;
         String v5 = bjd.v5();
@@ -33,6 +32,7 @@ public abstract class bgb extends bhs {
         String j62 = bjd.j6();
         int VH = bjd.VH();
         bgh j63;
+        String DW;
         int i3;
         try {
             if (this.FH == null) {
@@ -131,9 +131,9 @@ public abstract class bgb extends bhs {
     }
 
     private static void j6(JSch jSch, bkx bkx) {
+        InputStream fileInputStream;
         File FH = bkx.FH();
         if (FH != null) {
-            InputStream fileInputStream;
             try {
                 fileInputStream = new FileInputStream(new File(new File(FH, ".ssh"), "known_hosts"));
                 jSch.j6(fileInputStream);

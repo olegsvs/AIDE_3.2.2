@@ -253,27 +253,27 @@ public class ChannelForwardedTCPIP extends Channel {
     }
 
     static void FH(Session session) {
+        int i;
         int[] iArr = (int[]) null;
         synchronized (U2) {
             int[] iArr2 = new int[U2.size()];
-            int i = 0;
             int i2 = 0;
-            while (i < U2.size()) {
-                int i3;
-                Config config = (Config) U2.elementAt(i);
+            int i3 = 0;
+            while (i2 < U2.size()) {
+                Config config = (Config) U2.elementAt(i2);
                 if (config.j6 == session) {
-                    int i4 = i2 + 1;
-                    iArr2[i2] = config.DW;
-                    i3 = i4;
+                    int i4 = i3 + 1;
+                    iArr2[i3] = config.DW;
+                    i = i4;
                 } else {
-                    i3 = i2;
+                    i = i3;
                 }
-                i++;
-                i2 = i3;
+                i2++;
+                i3 = i;
             }
         }
-        for (i3 = 0; i3 < i2; i3++) {
-            j6(session, iArr2[i3]);
+        for (i = 0; i < i3; i++) {
+            j6(session, iArr2[i]);
         }
     }
 }

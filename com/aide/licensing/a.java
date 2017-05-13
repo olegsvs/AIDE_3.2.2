@@ -246,8 +246,8 @@ public class a {
     }
 
     private void j6(String str, String str2) {
-        Throwable e;
         FileWriter fileWriter;
+        Throwable e;
         try {
             fileWriter = new FileWriter(u7());
             try {

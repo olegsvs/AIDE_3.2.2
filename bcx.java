@@ -317,7 +317,6 @@ public class bcx extends axl {
 
     private void j6(String str, byte[] bArr) {
         boolean z;
-        FileOutputStream fileOutputStream;
         File v5 = v5(str);
         if (v5() && VH(str)) {
             z = true;
@@ -327,6 +326,7 @@ public class bcx extends axl {
             z = false;
         }
         if (z) {
+            FileOutputStream fileOutputStream;
             bds bds = (bds) FH().VH().j6(bds.j6);
             try {
                 fileOutputStream = new FileOutputStream(v5, true);
@@ -567,6 +567,7 @@ public class bcx extends axl {
 
     private bda j6(bda bda, String str) {
         bbv u7;
+        String FH;
         File Hw = Hw(str);
         if (bda != null) {
             u7 = bda.u7();
@@ -584,7 +585,6 @@ public class bcx extends axl {
             if (length == 0) {
                 return null;
             }
-            String FH;
             if (j6(j62, length)) {
                 if (length == 4096) {
                     return null;

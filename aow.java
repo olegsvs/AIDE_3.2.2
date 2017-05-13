@@ -192,10 +192,10 @@ public class aow extends apj {
     }
 
     protected aow DW() {
+        bjy bjy;
         Object obj = 1;
         baq baq = new baq(this.j6);
         asp XL = this.j6.XL();
-        bjy bjy;
         axc Hw;
         try {
             ast FH = XL.FH();

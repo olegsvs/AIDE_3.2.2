@@ -229,9 +229,8 @@ public final class xr {
 
     private void j6(wv wvVar, xg xgVar, int[] iArr) {
         int i;
-        int DW;
         akv akv;
-        int DW2;
+        int DW;
         int i2;
         akv j6;
         Object obj;
@@ -250,13 +249,14 @@ public final class xr {
         akv Hw = wvVar.Hw();
         xt xtVar = null;
         if (this.v5.U2()) {
+            int DW2;
             i = 1;
-            DW = Hw.DW(1);
-            if (this.we[DW] == null) {
-                this.we[DW] = new xt(this, DW);
+            DW2 = Hw.DW(1);
+            if (this.we[DW2] == null) {
+                this.we[DW2] = new xt(this, DW2);
             }
-            this.we[DW].DW(wvVar.j6());
-            xtVar = this.we[DW];
+            this.we[DW2].DW(wvVar.j6());
+            xtVar = this.we[DW2];
             akv = Hw;
         } else if (this.v5.a8()) {
             i = this.v5.lg().VH();
@@ -279,12 +279,12 @@ public final class xr {
         int DW3 = akv.DW();
         int i3 = i;
         while (i3 < DW3) {
-            DW2 = akv.DW(i3);
+            DW = akv.DW(i3);
             try {
-                j6(DW2, wvVar.j6(), xtVar, j62, iArr);
+                j6(DW, wvVar.j6(), xtVar, j62, iArr);
                 i3++;
             } catch (xw e) {
-                e.j6("...while merging to block " + aks.FH(DW2));
+                e.j6("...while merging to block " + aks.FH(DW));
                 throw e;
             }
         }
@@ -296,13 +296,13 @@ public final class xr {
             j6 = akv;
         }
         if (i2 == 0) {
-            DW2 = -1;
+            DW = -1;
         } else {
             i = this.v5.aM();
             if (i >= 0) {
-                DW2 = j6.DW(i);
+                DW = j6.DW(i);
             } else {
-                DW2 = i;
+                DW = i;
             }
         }
         if (Hw() && this.v5.Mr()) {
@@ -347,19 +347,19 @@ public final class xr {
                     }
                 }
             }
-            if (DW2 >= 0) {
-                j6.FH(DW2);
+            if (DW >= 0) {
+                j6.FH(DW);
             }
             j6.l_();
             akv2 = j6;
         }
-        i3 = akv2.Zo(DW2);
-        i2 = DW2;
+        i3 = akv2.Zo(DW);
+        i2 = DW;
         akv akv3 = akv2;
         DW3 = j3;
-        DW2 = size;
+        DW = size;
         while (DW3 > 0) {
-            FH = DW2 - 1;
+            FH = DW - 1;
             agf = (agf) J0.get(FH);
             Object obj2 = agf.Zo().Hw() == 1 ? 1 : null;
             agi agi = new agi(obj2 != null ? 2 : 1);
@@ -371,27 +371,27 @@ public final class xr {
                 akv2 = akv3;
             }
             agi.l_();
-            DW2 = FH();
-            j6(new afx(DW2, agi, akv2, i2), j62.v5());
+            DW = FH();
+            j6(new afx(DW, agi, akv2, i2), j62.v5());
             akv3 = akv3.Zo();
-            akv3.DW(i3, DW2);
+            akv3.DW(i3, DW);
             akv3.l_();
-            i2 = DW2;
+            i2 = DW;
             DW3--;
-            DW2 = FH;
+            DW = FH;
         }
-        if (DW2 == 0) {
+        if (DW == 0) {
             agf = null;
         } else {
-            agf = (agf) J0.get(DW2 - 1);
+            agf = (agf) J0.get(DW - 1);
         }
         if (agf == null || agf.Zo().Hw() == 1) {
             J0.add(new agn(agv.j3, agf == null ? agw.j6 : agf.VH(), null, agr.j6));
-            DW2++;
+            DW++;
         }
-        agi agi2 = new agi(DW2);
-        for (DW = 0; DW < DW2; DW++) {
-            agi2.j6(DW, (agf) J0.get(DW));
+        agi agi2 = new agi(DW);
+        for (DW2 = 0; DW2 < DW; DW2++) {
+            agi2.j6(DW2, (agf) J0.get(DW2));
         }
         agi2.l_();
         DW(new afx(wvVar.j6(), agi2, akv3, i2), j62.v5());

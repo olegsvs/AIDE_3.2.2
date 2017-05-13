@@ -13,12 +13,12 @@ public class iw {
     }
 
     public void j6(eo eoVar, cw cwVar, int i, int i2, String str, List list) {
-        String str2;
         this.FH = eoVar;
         eoVar.j6();
         if (str.equals("SELECT")) {
-            for (String str22 : list) {
-                eoVar.j6(str22);
+            for (String j6 : list) {
+                String j62;
+                eoVar.j6(j62);
             }
         }
         if (str.equals("SELECT_VARIABLE")) {
@@ -32,10 +32,10 @@ public class iw {
         }
         if (str.equals("SUGGEST_ELEMENT_NAME")) {
             if (list.size() == 1) {
-                str22 = (String) list.get(0);
-                if (str22.endsWith("s")) {
-                    str22 = str22.substring(0, str22.length() - 1);
-                    DW(cwVar, i, i2, j6(new String[]{str22}));
+                j62 = (String) list.get(0);
+                if (j62.endsWith("s")) {
+                    j62 = j62.substring(0, j62.length() - 1);
+                    DW(cwVar, i, i2, j6(new String[]{j62}));
                 }
             }
             DW(cwVar, i, i2, j6(new String[]{"e", "m", "a"}));

@@ -313,6 +313,7 @@ public class as implements bd {
     public int j6(List list, x xVar, boolean z) {
         aw awVar;
         at atVar;
+        t tVar;
         int i;
         int i2;
         String str;
@@ -358,8 +359,7 @@ public class as implements bd {
         long j = 0;
         if (atVar != at.NONE) {
             Hw = 0;
-            for (t tVar : list) {
-                t tVar2;
+            for (t tVar2 : list) {
                 Object j62 = TextUtils.isEmpty(tVar2.j6()) ? "" : u.j6(tVar2, currentTimeMillis);
                 if (j62.getBytes().length > this.Zo) {
                     j62 = "";

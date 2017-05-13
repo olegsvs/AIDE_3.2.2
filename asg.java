@@ -234,17 +234,17 @@ public class asg {
     }
 
     private void FH(axh axh) {
+        Object obj;
         axh.j6(JGitText.j6().renamesFindingExact, ((this.Hw.size() + this.Hw.size()) + this.FH.size()) + (this.Hw.size() * this.FH.size()));
         HashMap j6 = j6(this.FH, axh);
         HashMap j62 = j6(this.Hw, axh);
         ArrayList arrayList = new ArrayList(this.Hw.size());
         ArrayList arrayList2 = new ArrayList();
-        for (Object next : j62.values()) {
-            Object next2;
-            if (next2 instanceof ark) {
-                arrayList.add((ark) next2);
+        for (Object obj2 : j62.values()) {
+            if (obj2 instanceof ark) {
+                arrayList.add((ark) obj2);
             } else {
-                arrayList2.add((List) next2);
+                arrayList2.add((List) obj2);
             }
         }
         List arrayList3 = new ArrayList(this.Hw.size());
@@ -252,17 +252,17 @@ public class asg {
         while (it.hasNext()) {
             ark ark;
             ark ark2 = (ark) it.next();
-            next2 = j6.get(ark2.u7);
-            if (next2 instanceof ark) {
-                ark = (ark) next2;
+            obj2 = j6.get(ark2.u7);
+            if (obj2 instanceof ark) {
+                ark = (ark) obj2;
                 if (j6(ark.Hw, ark2.v5)) {
                     ark.Zo = arl.RENAME;
                     this.DW.add(j6(ark, ark2));
                 } else {
                     arrayList3.add(ark2);
                 }
-            } else if (next2 != null) {
-                ark = j6(ark2, (List) next2);
+            } else if (obj2 != null) {
+                ark = j6(ark2, (List) obj2);
                 if (ark != null) {
                     ark.Zo = arl.RENAME;
                     this.DW.add(j6(ark, ark2));
@@ -277,10 +277,10 @@ public class asg {
         Iterator it2 = arrayList2.iterator();
         while (it2.hasNext()) {
             List<ark> list = (List) it2.next();
-            Object obj = j6.get(((ark) list.get(0)).u7);
+            Object obj3 = j6.get(((ark) list.get(0)).u7);
             ark j63;
-            if (obj instanceof ark) {
-                ark2 = (ark) obj;
+            if (obj3 instanceof ark) {
+                ark2 = (ark) obj3;
                 j63 = j6(ark2, (List) list);
                 if (j63 != null) {
                     ark2.Zo = arl.RENAME;
@@ -297,9 +297,9 @@ public class asg {
                 } else {
                     arrayList3.addAll(list);
                 }
-            } else if (obj != null) {
+            } else if (obj3 != null) {
                 int i;
-                List list2 = (List) obj;
+                List list2 = (List) obj3;
                 long[] jArr = new long[(list2.size() * list.size())];
                 int i2 = 0;
                 for (int i3 = 0; i3 < list2.size(); i3++) {
@@ -337,14 +337,14 @@ public class asg {
         }
         this.Hw = arrayList3;
         this.FH = new ArrayList(j6.size());
-        for (Object next22 : j6.values()) {
-            if (next22 instanceof ark) {
-                ark3 = (ark) next22;
+        for (Object obj22 : j6.values()) {
+            if (obj22 instanceof ark) {
+                ark3 = (ark) obj22;
                 if (ark3.Zo == arl.DELETE) {
                     this.FH.add(ark3);
                 }
             } else {
-                for (ark ark32 : (List) next22) {
+                for (ark ark32 : (List) obj22) {
                     if (ark32.Zo == arl.DELETE) {
                         this.FH.add(ark32);
                     }

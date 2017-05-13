@@ -71,7 +71,7 @@ enum p {
     TableRow("TableRow", "Advanced Layout"),
     AbsoluteLayout("AbsoluteLayout", "Advanced Layout"),
     DrawerLayout("Drawer Layout", "App Layout", "android.support.v4.widget.DrawerLayout", new String[0]),
-    ViewPager("View Pager", "App Layout", "android.support.v4.widget.ViewPager", new String[0]);
+    ViewPager("View Pager", "App Layout", "android.support.v4.view.ViewPager", new String[0]);
     
     private Map XG;
     private String XX;

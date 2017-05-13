@@ -87,6 +87,7 @@ class v implements m {
     }
 
     private List DW(int i) {
+        Cursor query;
         SQLiteException e;
         Throwable th;
         List arrayList = new ArrayList();
@@ -98,7 +99,6 @@ class v implements m {
         if (j6 == null) {
             return arrayList;
         }
-        Cursor query;
         try {
             query = j6.query("datalayer", new String[]{"ID"}, null, null, null, null, String.format("%s ASC", new Object[]{"ID"}), Integer.toString(i));
             try {

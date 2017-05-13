@@ -200,6 +200,7 @@ class d implements Runnable {
     }
 
     private void u7() {
+        gg ggVar;
         Throwable th;
         boolean z = true;
         this.Mr = true;
@@ -210,7 +211,6 @@ class d implements Runnable {
             } else if (this.DW == null) {
                 throw new IOException("No solution");
             } else {
-                gg ggVar;
                 try {
                     this.j6.Zo.Zo();
                     String v5 = v5();

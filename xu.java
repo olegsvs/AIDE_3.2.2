@@ -14,7 +14,7 @@ class xu {
     xu(xr xrVar, xs xsVar, ArrayList arrayList) {
         this.j6 = xrVar;
         this.DW = new HashMap();
-        this.FH = new BitSet(r1.Hw);
+        this.FH = new BitSet(xrVar.Hw);
         this.Zo = xsVar;
         this.VH = arrayList;
     }

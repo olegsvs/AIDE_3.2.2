@@ -442,7 +442,6 @@ class y implements ao {
     }
 
     List j6(int i) {
-        Cursor query;
         SQLiteException e;
         Throwable th;
         List arrayList = new ArrayList();
@@ -454,6 +453,7 @@ class y implements ao {
         if (j6 == null) {
             return arrayList;
         }
+        Cursor query;
         try {
             query = j6.query("hits2", new String[]{"hit_id"}, null, null, null, null, String.format("%s ASC", new Object[]{"hit_id"}), Integer.toString(i));
             try {

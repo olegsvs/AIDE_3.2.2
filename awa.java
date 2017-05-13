@@ -369,63 +369,63 @@ public class awa {
     }
 
     private awd j6(awd awd, String str, String str2, String str3, List list) {
-        int i;
         List j6 = j6(awd, list);
+        int i = 0;
         int i2 = 0;
-        int i3 = 0;
-        int i4 = -1;
-        while (i3 < j6.size() && i2 < list.size()) {
-            awb awb = (awb) j6.get(i3);
+        int i3 = -1;
+        while (i2 < j6.size() && i < list.size()) {
+            int i4;
+            awb awb = (awb) j6.get(i2);
             if (awb.j6(str, str2, str3)) {
-                int i5 = i2 + 1;
-                j6.set(i3, awb.j6((String) list.get(i2)));
-                i = i3 + 1;
-                i4 = i5;
+                int i5 = i + 1;
+                j6.set(i2, awb.j6((String) list.get(i)));
+                i4 = i2 + 1;
+                i3 = i5;
             } else {
-                i = i4;
-                i4 = i2;
+                i4 = i3;
+                i3 = i;
             }
-            i3++;
-            i2 = i4;
-            i4 = i;
+            i2++;
+            i = i3;
+            i3 = i4;
         }
-        if (i2 == list.size() && i3 < j6.size()) {
-            while (i3 < j6.size()) {
-                i5 = i3 + 1;
-                if (((awb) j6.get(i3)).j6(str, str2, str3)) {
-                    i3 = i5 - 1;
-                    j6.remove(i3);
+        if (i == list.size() && i2 < j6.size()) {
+            while (i2 < j6.size()) {
+                i5 = i2 + 1;
+                if (((awb) j6.get(i2)).j6(str, str2, str3)) {
+                    i2 = i5 - 1;
+                    j6.remove(i2);
                 } else {
-                    i3 = i5;
+                    i2 = i5;
                 }
             }
         }
-        if (i2 < list.size() && r3 == j6.size()) {
-            if (i4 < 0) {
-                i = j6(j6, str, str2);
+        if (i < list.size() && r3 == j6.size()) {
+            if (i3 < 0) {
+                i4 = j6(j6, str, str2);
             } else {
-                i = i4;
+                i4 = i3;
             }
-            if (i < 0) {
+            if (i4 < 0) {
                 awb = new awb();
                 awb.DW = str;
                 awb.FH = str2;
                 j6.add(awb);
-                i4 = j6.size();
+                i3 = j6.size();
             } else {
-                i4 = i;
+                i3 = i4;
             }
-            while (i2 < list.size()) {
+            while (i < list.size()) {
                 awb awb2 = new awb();
                 awb2.DW = str;
                 awb2.FH = str2;
                 awb2.Hw = str3;
-                i3 = i2 + 1;
-                awb2.v5 = (String) list.get(i2);
-                i = i4 + 1;
-                j6.add(i4, awb2);
-                i4 = i;
-                i2 = i3;
+                i2 = i + 1;
+                awb2.v5 = (String) list.get(i);
+                i4 = i3 + 1;
+                j6.add(i3, awb2);
+                i3 = i4;
+                i = i2;
             }
         }
         return j6(j6);

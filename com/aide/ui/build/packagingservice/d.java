@@ -83,6 +83,141 @@ class d {
         }
     }
 
+    private void j6(java.lang.String r11, java.io.File r12) {
+        /* JADX: method processing error */
+/*
+        Error: jadx.core.utils.exceptions.JadxRuntimeException: Unreachable block: B:54:0x00cf
+	at jadx.core.dex.visitors.blocksmaker.BlockProcessor.modifyBlocksTree(BlockProcessor.java:248)
+	at jadx.core.dex.visitors.blocksmaker.BlockProcessor.processBlocksTree(BlockProcessor.java:52)
+	at jadx.core.dex.visitors.blocksmaker.BlockProcessor.rerun(BlockProcessor.java:44)
+	at jadx.core.dex.visitors.blocksmaker.BlockFinallyExtract.visit(BlockFinallyExtract.java:57)
+	at jadx.core.dex.visitors.DepthTraversal.visit(DepthTraversal.java:31)
+	at jadx.core.dex.visitors.DepthTraversal.visit(DepthTraversal.java:17)
+	at jadx.core.ProcessClass.process(ProcessClass.java:37)
+	at jadx.core.ProcessClass.processDependencies(ProcessClass.java:59)
+	at jadx.core.ProcessClass.process(ProcessClass.java:42)
+	at jadx.api.JadxDecompiler.processClass(JadxDecompiler.java:281)
+	at jadx.api.JavaClass.decompile(JavaClass.java:59)
+	at jadx.api.JadxDecompiler$1.run(JadxDecompiler.java:161)
+*/
+        /*
+        r10 = this;
+        r1 = new java.io.FileInputStream;
+        r1.<init>(r11);
+        r2 = new java.util.zip.ZipInputStream;	 Catch:{ all -> 0x0099 }
+        r2.<init>(r1);	 Catch:{ all -> 0x0099 }
+        r0 = new java.io.DataInputStream;	 Catch:{ all -> 0x0099 }
+        r0.<init>(r2);	 Catch:{ all -> 0x0099 }
+        r3 = new java.io.FileOutputStream;	 Catch:{ all -> 0x0094 }
+        r3.<init>(r12);	 Catch:{ all -> 0x0094 }
+        r4 = new com.aide.ui.build.packagingservice.h;	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r4.<init>(r3);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r5 = 0;	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r4.setLevel(r5);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r5 = new java.util.zip.ZipEntry;	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r6 = "placeholder.txt";	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r5.<init>(r6);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r6 = 0;	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r5.setSize(r6);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r4.putNextEntry(r5);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r4.closeEntry();	 Catch:{ all -> 0x008a, all -> 0x008f }
+    L_0x0030:
+        r5 = r2.getNextEntry();	 Catch:{ all -> 0x008a, all -> 0x008f }
+        if (r5 == 0) goto L_0x00c6;	 Catch:{ all -> 0x008a, all -> 0x008f }
+    L_0x0036:
+        r6 = r5.getName();	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r6 = r6.toLowerCase();	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r7 = ".class";	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r6 = r6.endsWith(r7);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        if (r6 == 0) goto L_0x0030;	 Catch:{ all -> 0x008a, all -> 0x008f }
+    L_0x0047:
+        r6 = r5.getName();	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r8 = r5.getSize();	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r7 = (int) r8;	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r6 = r10.j6(r0, r6, r7);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r7 = new java.util.zip.ZipEntry;	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r8 = new java.lang.StringBuilder;	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r8.<init>();	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r9 = r5.getName();	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r8 = r8.append(r9);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r9 = ".dex";	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r8 = r8.append(r9);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r8 = r8.toString();	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r7.<init>(r8);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r8 = r6.length;	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r8 = (long) r8;	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r7.setSize(r8);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r8 = r5.getName();	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r8 = r4.j6(r8);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        if (r8 != 0) goto L_0x009e;	 Catch:{ all -> 0x008a, all -> 0x008f }
+    L_0x0080:
+        r4.putNextEntry(r7);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r4.write(r6);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r4.closeEntry();	 Catch:{ all -> 0x008a, all -> 0x008f }
+        goto L_0x0030;
+    L_0x008a:
+        r0 = move-exception;
+        r4.close();	 Catch:{ Exception -> 0x00ef }
+    L_0x008e:
+        throw r0;	 Catch:{ all -> 0x008a, all -> 0x008f }
+    L_0x008f:
+        r0 = move-exception;
+        r3.close();	 Catch:{ all -> 0x0094 }
+        throw r0;	 Catch:{ all -> 0x0094 }
+    L_0x0094:
+        r0 = move-exception;
+        r2.close();	 Catch:{ all -> 0x0099 }
+        throw r0;	 Catch:{ all -> 0x0099 }
+    L_0x0099:
+        r0 = move-exception;
+        r1.close();
+        throw r0;
+    L_0x009e:
+        r6 = new java.lang.StringBuilder;	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r6.<init>();	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r7 = "Ignoring duplicate entry '";	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r6 = r6.append(r7);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r5 = r5.getName();	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r5 = r6.append(r5);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r6 = "' while writing DEX file for '";	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r5 = r5.append(r6);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r5 = r5.append(r11);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r5 = r5.toString();	 Catch:{ all -> 0x008a, all -> 0x008f }
+        com.aide.common.e.Hw(r5);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        goto L_0x0030;
+    L_0x00c6:
+        r4.close();	 Catch:{ Exception -> 0x00d3 }
+    L_0x00c9:
+        r3.close();	 Catch:{ all -> 0x0094 }
+        r2.close();
+        r1.close();
+        return;
+    L_0x00d3:
+        r0 = move-exception;
+        r4 = new java.lang.StringBuilder;	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r4.<init>();	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r5 = "Exception closing zip out for ";	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r4 = r4.append(r5);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r4 = r4.append(r11);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r4 = r4.toString();	 Catch:{ all -> 0x008a, all -> 0x008f }
+        com.aide.common.e.j6(r4);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        com.aide.common.e.j6(r0);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        goto L_0x00c9;	 Catch:{ all -> 0x008a, all -> 0x008f }
+    L_0x00ef:
+        r4 = move-exception;	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r5 = new java.lang.StringBuilder;	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r5.<init>();	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r6 = "Exception closing zip out for ";	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r5 = r5.append(r6);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r5 = r5.append(r11);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        r5 = r5.toString();	 Catch:{ all -> 0x008a, all -> 0x008f }
+        com.aide.common.e.j6(r5);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        com.aide.common.e.j6(r4);	 Catch:{ all -> 0x008a, all -> 0x008f }
+        goto L_0x008e;
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.aide.ui.build.packagingservice.d.j6(java.lang.String, java.io.File):void");
+    }
+
     public d(b bVar, String str, String[] strArr, String[] strArr2, String[] strArr3, String str2, String str3, String str4, String[] strArr4, String str5, String str6, String str7, String str8, String str9, boolean z, boolean z2, boolean z3) {
         this.j6 = bVar;
         this.DW = str;
@@ -249,9 +384,9 @@ class d {
     }
 
     private void j6(String str, a aVar, h hVar, boolean z) {
+        ZipInputStream zipInputStream;
         if (new File(str).exists()) {
             InputStream fileInputStream = new FileInputStream(str);
-            ZipInputStream zipInputStream;
             try {
                 zipInputStream = new ZipInputStream(fileInputStream);
                 j6(zipInputStream, hVar, aVar, z);
@@ -551,57 +686,6 @@ class d {
         throw new UnsupportedOperationException("Method not decompiled: com.aide.ui.build.packagingservice.d.j6(java.lang.String):void");
     }
 
-    private void j6(String str, File file) {
-        InputStream fileInputStream = new FileInputStream(str);
-        try {
-            InputStream zipInputStream = new ZipInputStream(fileInputStream);
-            DataInputStream dataInputStream = new DataInputStream(zipInputStream);
-            try {
-                OutputStream fileOutputStream = new FileOutputStream(file);
-                h hVar;
-                try {
-                    hVar = new h(fileOutputStream);
-                    hVar.setLevel(0);
-                    ZipEntry zipEntry = new ZipEntry("placeholder.txt");
-                    zipEntry.setSize(0);
-                    hVar.putNextEntry(zipEntry);
-                    hVar.closeEntry();
-                    while (true) {
-                        zipEntry = zipInputStream.getNextEntry();
-                        if (zipEntry == null) {
-                            try {
-                                break;
-                            } catch (Throwable e) {
-                                e.j6("Exception closing zip out for " + str);
-                                e.j6(e);
-                            }
-                        } else if (zipEntry.getName().toLowerCase().endsWith(".class")) {
-                            byte[] j6 = j6(dataInputStream, zipEntry.getName(), (int) zipEntry.getSize());
-                            ZipEntry zipEntry2 = new ZipEntry(zipEntry.getName() + ".dex");
-                            zipEntry2.setSize((long) j6.length);
-                            if (hVar.j6(zipEntry.getName())) {
-                                e.Hw("Ignoring duplicate entry '" + zipEntry.getName() + "' while writing DEX file for '" + str);
-                            } else {
-                                hVar.putNextEntry(zipEntry2);
-                                hVar.write(j6);
-                                hVar.closeEntry();
-                            }
-                        }
-                    }
-                    hVar.close();
-                    fileOutputStream.close();
-                    fileInputStream.close();
-                } catch (Throwable th) {
-                    fileOutputStream.close();
-                }
-            } finally {
-                zipInputStream.close();
-            }
-        } catch (Throwable th2) {
-            fileInputStream.close();
-        }
-    }
-
     private byte[] j6(DataInputStream dataInputStream, String str, int i) {
         byte[] toByteArray;
         aco aco = new aco(this.j3);
@@ -697,11 +781,11 @@ class d {
     }
 
     private void j6(String str, String str2) {
-        FileOutputStream fileOutputStream;
         if (Thread.interrupted()) {
             throw new InterruptedException();
         }
         InputStream fileInputStream = new FileInputStream(str);
+        FileOutputStream fileOutputStream;
         try {
             fileOutputStream = new FileOutputStream(str2);
             fileOutputStream.write(j6(new DataInputStream(fileInputStream), str, (int) new File(str).length()));

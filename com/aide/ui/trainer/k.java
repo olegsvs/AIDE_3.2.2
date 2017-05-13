@@ -13,7 +13,7 @@ public class k {
 
     public List j6() {
         List arrayList = new ArrayList();
-        for (int i = 0; i < c.EQ(this.j6, "Exercise"); i++) {
+        for (int i = 0; i < c.EQ(this.j6, "CodeFile"); i++) {
             arrayList.add(c.tp(c.DW(this.j6, "CodeFile", i), "name"));
         }
         return arrayList;
@@ -28,7 +28,7 @@ public class k {
     }
 
     public String Hw() {
-        return c.tp(r1, r2);
+        return c.tp(this.j6, "project_name");
     }
 
     public String v5() {

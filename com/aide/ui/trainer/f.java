@@ -75,7 +75,7 @@ public class f {
     }
 
     public String[] VH() {
-        int lastIndexOf = c.gn(this.j6, "title").lastIndexOf(" ");
+        int lastIndexOf = c.gn(c.we(r1, r2), r2).lastIndexOf(" ");
         return new String[]{r0.substring(0, lastIndexOf), r0.substring(lastIndexOf + 1)};
     }
 

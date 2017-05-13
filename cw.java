@@ -377,9 +377,9 @@ public class cw {
     }
 
     public List lg() {
-        Reader rN;
         List arrayList = new ArrayList();
         arrayList.add("");
+        Reader rN;
         try {
             rN = rN();
             StringBuffer stringBuffer = new StringBuffer();

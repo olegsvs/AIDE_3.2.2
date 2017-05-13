@@ -10,6 +10,6 @@ class rl$1$2 implements Runnable {
     }
 
     public void run() {
-        this.DW.j6.we.j6(this.j6);
+        r1.we.j6(this.j6);
     }
 }

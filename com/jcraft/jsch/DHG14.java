@@ -324,7 +324,6 @@ public class DHG14 extends KeyExchange {
         Object e;
         boolean DW;
         Exception exception;
-        SignatureDSA signatureDSA;
         switch (this.lg) {
             case 31:
                 buffer.Hw();
@@ -413,6 +412,7 @@ public class DHG14 extends KeyExchange {
                         JSch.v5().j6(1, "ssh_rsa_verify: signature " + DW);
                     }
                 } else if (FH.equals("ssh-dss")) {
+                    SignatureDSA signatureDSA;
                     gn = (byte[]) null;
                     this.a8 = 1;
                     i2 = i + 1;

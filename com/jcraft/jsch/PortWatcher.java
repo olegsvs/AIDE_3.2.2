@@ -120,25 +120,25 @@ class PortWatcher implements Runnable {
 
     static void j6(Session session) {
         synchronized (u7) {
+            int i;
             PortWatcher[] portWatcherArr = new PortWatcher[u7.size()];
-            int i = 0;
             int i2 = 0;
-            while (i < u7.size()) {
-                int i3;
-                PortWatcher portWatcher = (PortWatcher) u7.elementAt(i);
+            int i3 = 0;
+            while (i2 < u7.size()) {
+                PortWatcher portWatcher = (PortWatcher) u7.elementAt(i2);
                 if (portWatcher.j6 == session) {
                     portWatcher.j6();
-                    int i4 = i2 + 1;
-                    portWatcherArr[i2] = portWatcher;
-                    i3 = i4;
+                    int i4 = i3 + 1;
+                    portWatcherArr[i3] = portWatcher;
+                    i = i4;
                 } else {
-                    i3 = i2;
+                    i = i3;
                 }
-                i++;
-                i2 = i3;
+                i2++;
+                i3 = i;
             }
-            for (i3 = 0; i3 < i2; i3++) {
-                u7.removeElement(portWatcherArr[i3]);
+            for (i = 0; i < i3; i++) {
+                u7.removeElement(portWatcherArr[i]);
             }
         }
     }

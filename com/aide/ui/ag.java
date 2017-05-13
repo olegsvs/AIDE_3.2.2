@@ -231,12 +231,15 @@ public class ag {
     private static void VH(Activity activity) {
         if (j.a8().J0() || j.j3().EQ()) {
             if (!j.a8().gn()) {
-                if (j.Mr().tp() || j.Mr().Hw() || !u.Hw()) {
-                    FH(activity);
-                    return;
+                if (!(j.Mr().tp() || j.Mr().Hw())) {
+                    boolean Hw = u.Hw();
+                    if (1 != 0) {
+                        Activity activity2 = activity;
+                        p.j6(activity2, "AIDE Premium Sale", "Get the AIDE Premium Key 50% off until " + DateFormat.getDateInstance(2).format(u.DW().getTime()) + "!", true, "Purchase", new 3(), "Not now", new 4());
+                        return;
+                    }
                 }
-                Activity activity2 = activity;
-                p.j6(activity2, "AIDE Premium Sale", "Get the AIDE Premium Key 50% off until " + DateFormat.getDateInstance(2).format(u.DW().getTime()) + "!", true, "Purchase", new 3(), "Not now", new 4());
+                FH(activity);
             }
         } else if (!j.QX().vy()) {
             u7(activity);

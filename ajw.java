@@ -12,11 +12,11 @@ public class ajw {
     }
 
     public agu j6() {
-        int i;
         int m_ = this.DW.m_();
         BitSet bitSet = new BitSet(this.DW.tp());
-        for (int i2 = 0; i2 < m_; i2++) {
-            afx j6 = this.DW.j6(i2);
+        for (int i = 0; i < m_; i++) {
+            int i2;
+            afx j6 = this.DW.j6(i);
             if (!bitSet.get(j6.j6())) {
                 akv j62 = this.j6.j6(j6.j6());
                 int DW = j62.DW();
@@ -25,8 +25,8 @@ public class ajw {
                     afx DW3 = this.DW.DW(DW2);
                     if (!(bitSet.get(DW2) || DW3.FH().DW() > 1 || DW3.Zo().Zo().j6() == 55)) {
                         akv akv = new akv();
-                        for (i = i3 + 1; i < DW; i++) {
-                            int DW4 = j62.DW(i);
+                        for (i2 = i3 + 1; i2 < DW; i2++) {
+                            int DW4 = j62.DW(i2);
                             afx DW5 = this.DW.DW(DW4);
                             if (DW5.FH().DW() == 1 && j6(DW3, DW5)) {
                                 akv.FH(DW4);
@@ -38,9 +38,9 @@ public class ajw {
                 }
             }
         }
-        for (i = m_ - 1; i >= 0; i--) {
-            if (bitSet.get(this.FH.j6(i).j6())) {
-                this.FH.j6(i, null);
+        for (i2 = m_ - 1; i2 >= 0; i2--) {
+            if (bitSet.get(this.FH.j6(i2).j6())) {
+                this.FH.j6(i2, null);
             }
         }
         this.FH.u7();

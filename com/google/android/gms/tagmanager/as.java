@@ -377,6 +377,7 @@ class as implements ad {
     }
 
     int Hw() {
+        int count;
         Cursor cursor;
         Throwable th;
         Cursor cursor2 = null;
@@ -384,7 +385,6 @@ class as implements ad {
         if (j6 == null) {
             return 0;
         }
-        int count;
         try {
             Cursor query = j6.query("gtm_hits", new String[]{"hit_id", "hit_first_send_time"}, "hit_first_send_time=0", null, null, null, null);
             try {
@@ -440,6 +440,7 @@ class as implements ad {
     }
 
     List j6(int i) {
+        Cursor query;
         SQLiteException e;
         Throwable th;
         List arrayList = new ArrayList();
@@ -451,7 +452,6 @@ class as implements ad {
         if (j6 == null) {
             return arrayList;
         }
-        Cursor query;
         try {
             query = j6.query("gtm_hits", new String[]{"hit_id"}, null, null, null, null, String.format("%s ASC", new Object[]{"hit_id"}), Integer.toString(i));
             try {

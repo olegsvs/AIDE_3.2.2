@@ -276,12 +276,12 @@ public class cp {
     }
 
     protected void FH() {
-        cq cqVar;
         int i = 0;
         ga gaVar = new ga(this.Hw);
         ga gaVar2 = new ga(this.Hw);
         this.tp.j6.j6();
         while (this.tp.j6.DW()) {
+            cq cqVar;
             if (this.VH == null || !this.VH.DW() || gaVar.FH() != 0 || gaVar2.FH() != 0) {
                 cqVar = (cq) this.tp.j6.Hw();
                 by j6 = cqVar.j6();

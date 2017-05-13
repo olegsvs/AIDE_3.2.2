@@ -129,7 +129,6 @@ public class ErrorBrowser extends LinearLayout implements a {
     public void Hw() {
         CharSequence string;
         int i;
-        String string2;
         CustomKeysListView listView = getListView();
         boolean hasFocus = listView.hasFocus();
         this.DW = j.aM().FH();
@@ -137,6 +136,7 @@ public class ErrorBrowser extends LinearLayout implements a {
             string = getContext().getResources().getString(ab.view_no_errors);
             i = R.drawable.project_no_errors;
         } else {
+            String string2;
             if (this.DW == 1) {
                 string2 = getContext().getResources().getString(ab.view_one_error);
             } else {

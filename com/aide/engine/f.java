@@ -47,7 +47,7 @@ class f implements eb {
 
     public void j6(cw cwVar, int i, int i2) {
         if (this.j6.j6.VH != null) {
-            this.j6.j6.VH.FH(cwVar.er(), cwVar.aM(), i, i2);
+            r1.VH.FH(cwVar.er(), cwVar.aM(), i, i2);
         }
     }
 

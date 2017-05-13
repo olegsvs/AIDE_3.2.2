@@ -52,11 +52,11 @@ final class arx {
 
     private boolean DW() {
         for (int i = this.v5.DW - 1; this.v5.j6 <= i; i--) {
-            int FH;
             int j6 = j6(this.FH, i);
             int i2 = this.Zo[j6];
             int i3 = 0;
             while (i2 != 0) {
+                int FH;
                 long j = this.gn[i2];
                 if (this.DW.j6(this.FH, DW(j), this.FH, i)) {
                     FH = FH(j) + 1;

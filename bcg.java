@@ -89,8 +89,8 @@ class bcg extends awy {
     }
 
     private File j6(MessageDigest messageDigest, int i, long j, InputStream inputStream) {
-        OutputStream fileOutputStream;
         File v5 = v5();
+        OutputStream fileOutputStream;
         try {
             OutputStream newOutputStream;
             fileOutputStream = new FileOutputStream(v5);
@@ -124,8 +124,8 @@ class bcg extends awy {
     }
 
     private File FH(int i, byte[] bArr, int i2, int i3) {
-        OutputStream fileOutputStream;
         File v5 = v5();
+        OutputStream fileOutputStream;
         try {
             OutputStream newOutputStream;
             fileOutputStream = new FileOutputStream(v5);
