@@ -1622,7 +1622,7 @@
 
     const-string/jumbo v7, "App Layout"
 
-    const-string/jumbo v8, "android.support.v4.widget.ViewPager"
+    const-string/jumbo v8, "android.support.v4.view.ViewPager"
 
     new-array v9, v2, [Ljava/lang/String;
 
