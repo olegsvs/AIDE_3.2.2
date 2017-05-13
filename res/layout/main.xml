@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@x/mainFrame" android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="0" android:id="@x/mainActionBarPopupAnchor" android:layout_width="-1" android:layout_height="-2" />
+    <com.aide.ui.views.SplitView android:id="@x/mainSplitView" android:layout_width="-1" android:layout_height="-1">
+        <FrameLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+            <LinearLayout android:gravity="11" android:id="@x/mainCodeEmptyView" android:visibility="0" android:layout_width="-1" android:layout_height="-1" style="@ac/EmptyEditorBackground">
+                <TextView android:id="@x/mainNoOpenFilesView" android:focusable="true" android:layout_width="-2" android:layout_height="-2" android:text="@ab/view_no_open_files" style="@ac/EmptyEditorLabel" />
+            </LinearLayout>
+            <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+                <com.aide.ui.AIDEEditorPager android:id="@x/mainCodePageView" android:layout_width="-1" android:layout_height="-2" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="10" android:orientation="0" android:id="@x/mainSearchBarNoTabs" android:paddingLeft="2dp" android:paddingTop="5dp" android:paddingRight="2dp" android:paddingBottom="1dp" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:minHeight="?unknown_attr_ref: 10102eb">
+                    <TextView android:id="@x/mainSearchLabel" android:padding="3dp" android:layout_width="-2" android:layout_height="-2" android:text="Search:" style="@ac/SearchLabel" />
+                    <EditText android:id="@x/mainSearchBox" android:layout_width="-1" android:layout_height="-2" style="@ac/SearchEditText" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:background="?unknown_attr_ref: 7f01011f" android:paddingTop="2dp" android:paddingRight="2dp" android:layout_width="-2" android:layout_height="-2" />
+        <com.aide.ui.browsers.BrowserPager android:id="@x/mainBrowserPager" android:layout_width="-1" android:layout_height="-1" />
+    </com.aide.ui.views.SplitView>
+    <LinearLayout android:gravity="35" android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+        <com.aide.ui.AIDEAnalysisProgressBar android:id="@x/mainErrorProgress" android:layout_width="-1" android:layout_height="3dp" style="@ac/AnalysisProgressBar" />
+    </LinearLayout>
+    <LinearLayout android:gravity="35" android:orientation="1" android:id="@x/mainActionBarContainerNoTabs" android:layout_width="-1" android:layout_height="-1"
+        <LinearLayout android:orientation="1" android:id="@x/mainActionBarNoTabs" android:layout_width="-1" android:layout_height="-2" style="@ac/ActionBarTopRight" /> />
+    <LinearLayout android:gravity="55" android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+        <ImageView android:id="@x/mainMasterButton" android:focusable="true" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="10dp" android:src="@drawable/master_button" />
+    </LinearLayout>
+    <AbsoluteLayout android:id="@x/mainPopupAnchorContainer" android:layout_width="-1" android:layout_height="-1" />
+    <LinearLayout android:gravity="50" android:orientation="1" android:id="@x/mainQuickKeyBarContainer" android:layout_width="-1" android:layout_height="-1" />
+</FrameLayout>

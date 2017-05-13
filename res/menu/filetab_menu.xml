@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item android:id="@x/editorMenuClose" android:title="@ab/command_close" />
+    <item android:id="@x/filetabMenuCloseOthers" android:title="@ab/command_close_others" />
+    <item android:id="@x/filetabMenuCloseAll" android:title="@ab/command_close_all" />
+</menu>

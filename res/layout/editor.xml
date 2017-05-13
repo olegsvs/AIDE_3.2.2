@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2">
+    <com.aide.ui.views.CodeEditTextScrollView android:id="@x/editorScrollView" android:fadingEdge="0" android:layout_width="-2" android:layout_height="-2" android:layout_weight="1.0">
+        <com.aide.ui.views.CodeEditTextHorizontalScrollView android:scrollbars="0" android:fadingEdge="0" android:layout_width="-2" android:layout_height="-2">
+            <LinearLayout android:orientation="1" android:layout_width="-2" android:layout_height="-2"
+                <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+                    <FrameLayout android:id="@x/editorHeaderLearnHeader" android:layout_width="-1" android:layout_height="-2">
+                        <LinearLayout android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="5dp" style="@ac/TrainerHeaderOuter"
+                            <LinearLayout android:orientation="1" android:id="@x/editorHeaderLearnTask" android:focusable="true" android:layout_width="-1" android:layout_height="-2" style="@ac/TrainerHeaderInner">
+                                <TextView android:textColor="#ffffff" android:id="@x/editorHeaderLearnTaskTitle" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="3dp" android:layout_width="-2" android:layout_height="-2" android:text="" />
+                                <ProgressBar android:id="@x/editorHeaderLearnProgress" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="3dp" android:layout_width="-1" android:layout_height="-2" android:indeterminate="false" style="@*style/Widget.Holo.ProgressBar.Horizontal" />
+                                <TextView android:textColor="#ffffff" android:id="@x/editorHeaderLearnTaskText" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="-2" android:layout_height="-2" android:text="" android:textIsSelectable="true" />
+                                <TextView android:textColor="#ffffff" android:id="@x/editorHeaderLearnErrorTitle" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="-2" android:layout_height="-2" android:text="" />
+                                <TextView android:textColor="#ffffff" android:id="@x/editorHeaderLearnErrorText" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="-2" android:layout_height="-2" android:text="" android:textIsSelectable="true" />
+                                <TextView android:textColor="#ffffff" android:id="@x/editorHeaderLearnButton" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="-2" android:layout_height="-2" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="5" android:id="@x/editorHeaderLearnNewLayout" android:layout_width="-1" android:layout_height="-2">
+                            <ImageView android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="2dp" android:src="@drawable/badge_new" />
+                        </LinearLayout>
+                    </FrameLayout>
+                    <LinearLayout android:id="@x/editorHeaderFileInfo" android:layout_width="-1" android:layout_height="-2" style="@ac/BrowserHeaderBackgroundOuter"
+                        <LinearLayout android:gravity="10" android:orientation="0" android:id="@x/editorHeaderFileInfoInner" android:padding="3dp" android:layout_width="-1" android:layout_height="-2" style="@ac/BrowserHeaderBackgroundInner">
+                            <ImageView android:id="@x/editorHeaderFileIcon" android:paddingRight="5dp" android:src="@drawable/file_type_unknown" style="@ac/BrowserHeaderImage" />
+                            <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+                                <TextView android:id="@x/editorHeaderFileName" android:paddingBottom="1dp" android:layout_width="-1" android:layout_height="-2" android:text="/" style="@ac/BrowserHeaderLabel" />
+                                <TextView android:ellipsize="1" android:id="@x/editorHeaderDirectoryName" android:layout_width="-1" android:layout_height="-2" android:text="/" android:singleLine="true" style="@ac/BrowserHeaderLabelSmallGray" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <com.aide.ui.AIDEEditor android:id="@x/editorCodeEditor" android:background="#00000000" android:layout_width="-2" android:layout_height="-2">
+                    <requestFocus />
+                </com.aide.ui.AIDEEditor>
+            </LinearLayout>
+        </com.aide.ui.views.CodeEditTextHorizontalScrollView>
+    </com.aide.ui.views.CodeEditTextScrollView>
+</LinearLayout>

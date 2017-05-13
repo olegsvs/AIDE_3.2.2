@@ -1,0 +1,7 @@
+public enum ajc {
+    MOVE_PARAM_COMBINER,
+    SCCP,
+    LITERAL_UPGRADE,
+    CONST_COLLECTOR,
+    ESCAPE_ANALYSIS
+}

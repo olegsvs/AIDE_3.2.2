@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>>
+<menu>
+    <item android:id="@x/trainerMenuSoundOn" android:title="@ab/trainer_sound_on" android:showAsAction="1" />
+    <item android:id="@x/trainerMenuSoundOff" android:title="@ab/trainer_sound_off" android:showAsAction="1" />
+    <item android:id="@x/trainerMenuVoiceOn" android:title="@ab/trainer_voice_on" android:showAsAction="1" />
+    <item android:id="@x/trainerMenuVoiceOff" android:title="@ab/trainer_voice_off" android:showAsAction="1" />
+</menu>

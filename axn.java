@@ -1,0 +1,12 @@
+public enum axn {
+    NOT_ATTEMPTED,
+    LOCK_FAILURE,
+    NO_CHANGE,
+    NEW,
+    FORCED,
+    FAST_FORWARD,
+    REJECTED,
+    REJECTED_CURRENT_BRANCH,
+    IO_FAILURE,
+    RENAMED
+}

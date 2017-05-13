@@ -1,0 +1,32 @@
+public final class amz {
+    public static final int common_full_open_on_phone = 2130837530;
+    public static final int common_ic_googleplayservices = 2130837531;
+    public static final int common_signin_btn_icon_dark = 2130837532;
+    public static final int common_signin_btn_icon_disabled_dark = 2130837533;
+    public static final int common_signin_btn_icon_disabled_focus_dark = 2130837534;
+    public static final int common_signin_btn_icon_disabled_focus_light = 2130837535;
+    public static final int common_signin_btn_icon_disabled_light = 2130837536;
+    public static final int common_signin_btn_icon_focus_dark = 2130837537;
+    public static final int common_signin_btn_icon_focus_light = 2130837538;
+    public static final int common_signin_btn_icon_light = 2130837539;
+    public static final int common_signin_btn_icon_normal_dark = 2130837540;
+    public static final int common_signin_btn_icon_normal_light = 2130837541;
+    public static final int common_signin_btn_icon_pressed_dark = 2130837542;
+    public static final int common_signin_btn_icon_pressed_light = 2130837543;
+    public static final int common_signin_btn_text_dark = 2130837544;
+    public static final int common_signin_btn_text_disabled_dark = 2130837545;
+    public static final int common_signin_btn_text_disabled_focus_dark = 2130837546;
+    public static final int common_signin_btn_text_disabled_focus_light = 2130837547;
+    public static final int common_signin_btn_text_disabled_light = 2130837548;
+    public static final int common_signin_btn_text_focus_dark = 2130837549;
+    public static final int common_signin_btn_text_focus_light = 2130837550;
+    public static final int common_signin_btn_text_light = 2130837551;
+    public static final int common_signin_btn_text_normal_dark = 2130837552;
+    public static final int common_signin_btn_text_normal_light = 2130837553;
+    public static final int common_signin_btn_text_pressed_dark = 2130837554;
+    public static final int common_signin_btn_text_pressed_light = 2130837555;
+    public static final int ic_plusone_medium_off_client = 2130837730;
+    public static final int ic_plusone_small_off_client = 2130837731;
+    public static final int ic_plusone_standard_off_client = 2130837732;
+    public static final int ic_plusone_tall_off_client = 2130837733;
+}
