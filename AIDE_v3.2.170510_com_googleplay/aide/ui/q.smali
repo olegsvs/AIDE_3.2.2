@@ -361,7 +361,7 @@
 
     move-result v0
 
-    if-nez v0, :cond_3
+    if-eqz v0, :cond_3
 
     invoke-static {}, Lcom/aide/ui/e;->j3()Lpe;
 
@@ -371,7 +371,7 @@
 
     move-result v0
 
-    if-nez v0, :cond_3
+    if-eqz v0, :cond_3
 
     .line 97
     invoke-static {}, Lcom/aide/ui/e;->QX()Lpm;
@@ -382,14 +382,14 @@
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-nez v0, :cond_2
 
     .line 99
     invoke-static {p0}, Lcom/aide/common/d;->DW(Landroid/content/Context;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_1
 
     .line 101
     invoke-static {p0}, Lcom/aide/ui/activities/TrainerCourseActivity;->j6(Landroid/app/Activity;)V
@@ -421,12 +421,14 @@
 
     move-result v0
 
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_0
 
     .line 120
     invoke-static {}, Lcom/aide/ui/e;->VH()Z
 
     move-result v0
+
+    const/4 v0, 0x1
 
     if-eqz v0, :cond_4
 

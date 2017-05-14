@@ -214,6 +214,8 @@
 
     if-nez v1, :cond_1
 
+    goto :goto_1
+
     .line 161
     const/high16 v1, 0x10000000
 
@@ -221,6 +223,7 @@
 
     .line 163
     :cond_1
+    :goto_1
     invoke-virtual {p1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
