@@ -4608,6 +4608,16 @@
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 10
 
+	const/4 v0, 0x1
+
+	const-string v1, "Patched by oleg.svs & SmartRomTeam"
+
+	invoke-static {p0, v1, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+	move-result-object v0
+
+	invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
     .prologue
     const/4 v8, 0x1
 
