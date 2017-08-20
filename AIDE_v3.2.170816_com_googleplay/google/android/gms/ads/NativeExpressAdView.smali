@@ -1,0 +1,189 @@
+.class public final Lcom/google/android/gms/ads/NativeExpressAdView;
+.super Lcom/google/android/gms/ads/BaseAdView;
+
+
+# annotations
+.annotation runtime Lcom/google/android/gms/internal/eh;
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/ads/BaseAdView;-><init>(Landroid/content/Context;I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, p1, p2, v0}, Lcom/google/android/gms/ads/BaseAdView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, p1, p2, p3, v0}, Lcom/google/android/gms/ads/BaseAdView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic DW()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/google/android/gms/ads/BaseAdView;->DW()V
+
+    return-void
+.end method
+
+.method public bridge synthetic FH()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/google/android/gms/ads/BaseAdView;->FH()V
+
+    return-void
+.end method
+
+.method public bridge synthetic getAdListener()Lcom/google/android/gms/ads/a;
+    .locals 1
+
+    invoke-super {p0}, Lcom/google/android/gms/ads/BaseAdView;->getAdListener()Lcom/google/android/gms/ads/a;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic getAdSize()Lcom/google/android/gms/ads/d;
+    .locals 1
+
+    invoke-super {p0}, Lcom/google/android/gms/ads/BaseAdView;->getAdSize()Lcom/google/android/gms/ads/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic getAdUnitId()Ljava/lang/String;
+    .locals 1
+
+    invoke-super {p0}, Lcom/google/android/gms/ads/BaseAdView;->getAdUnitId()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic getInAppPurchaseListener()Lcom/google/android/gms/ads/purchase/b;
+    .locals 1
+
+    invoke-super {p0}, Lcom/google/android/gms/ads/BaseAdView;->getInAppPurchaseListener()Lcom/google/android/gms/ads/purchase/b;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic getMediationAdapterClassName()Ljava/lang/String;
+    .locals 1
+
+    invoke-super {p0}, Lcom/google/android/gms/ads/BaseAdView;->getMediationAdapterClassName()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getVideoController()Lcom/google/android/gms/ads/f;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/ads/NativeExpressAdView;->j6:Lcom/google/android/gms/ads/internal/client/f;
+
+    invoke-virtual {v0}, Lcom/google/android/gms/ads/internal/client/f;->we()Lcom/google/android/gms/ads/f;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getVideoOptions()Lcom/google/android/gms/ads/g;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/ads/NativeExpressAdView;->j6:Lcom/google/android/gms/ads/internal/client/f;
+
+    invoke-virtual {v0}, Lcom/google/android/gms/ads/internal/client/f;->J8()Lcom/google/android/gms/ads/g;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic j6()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/google/android/gms/ads/BaseAdView;->j6()V
+
+    return-void
+.end method
+
+.method public bridge synthetic j6(Lcom/google/android/gms/ads/c;)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/google/android/gms/ads/BaseAdView;->j6(Lcom/google/android/gms/ads/c;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic setAdListener(Lcom/google/android/gms/ads/a;)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/google/android/gms/ads/BaseAdView;->setAdListener(Lcom/google/android/gms/ads/a;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic setAdSize(Lcom/google/android/gms/ads/d;)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/google/android/gms/ads/BaseAdView;->setAdSize(Lcom/google/android/gms/ads/d;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic setAdUnitId(Ljava/lang/String;)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/google/android/gms/ads/BaseAdView;->setAdUnitId(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic setInAppPurchaseListener(Lcom/google/android/gms/ads/purchase/b;)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/google/android/gms/ads/BaseAdView;->setInAppPurchaseListener(Lcom/google/android/gms/ads/purchase/b;)V
+
+    return-void
+.end method
+
+.method public setVideoOptions(Lcom/google/android/gms/ads/g;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/ads/NativeExpressAdView;->j6:Lcom/google/android/gms/ads/internal/client/f;
+
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/ads/internal/client/f;->j6(Lcom/google/android/gms/ads/g;)V
+
+    return-void
+.end method
